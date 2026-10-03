@@ -26,7 +26,9 @@ comparison criterion.
 [`docs/CLIQUE_BLOWUP_THEOREM.md`](docs/CLIQUE_BLOWUP_THEOREM.md) proves an
 additional unconditional result: every clique blow-up of a strictly stable
 finite witness remains strictly stable. Applied to the `N=80,002` witness, it
-produces infinitely many stable graphs above `11/16`.
+produces infinitely many stable graphs above `11/16`. Its finite-dimensional
+algebra is machine-checked in
+[`KuramotoBlockLimit/CliqueBlowup.lean`](KuramotoBlockLimit/CliqueBlowup.lean).
 
 ## Current evidence
 
@@ -57,9 +59,11 @@ Build the machine-checked algebraic layer with:
 lake build
 ```
 
-The Lean proofs currently cover the degree identity, reflection reduction from
-six torques to three, and exact equilibrium lifting from equitable neighbor
-counts. They also check quotient symmetry and the rotation kernel. See
+The Lean proofs cover the degree identity, reflection reduction from six
+torques to three, exact equilibrium lifting from equitable neighbor counts,
+and the complete clique-blow-up theorem. For the latter, Lean checks the actual
+Kuramoto Hessian matrix, its quadratic-form decomposition, preservation of
+positive semidefiniteness, and preservation of the rotation-only kernel. See
 [`formal/README.md`](formal/README.md).
 
 ## Proof status
@@ -70,6 +74,7 @@ counts. They also check quotient symmetry and the rotation kernel. See
 - Arbitrarily-large realization theorem: proof plan drafted; not proved yet.
 - Sharp upper bound within the six-block topology: conjectural.
 - General graphon extension: scoped; not proved here yet.
-- Lean formalization: active. Lean 4.34.1/mathlib is pinned; the degree
-  identity, reflection-torque reduction, and exact finite equilibrium lifting
-  are machine-checked, along with quotient symmetry and the rotation kernel.
+- Lean formalization: the complete uniform clique-blow-up result is checked,
+  in addition to the degree, reflection, equitable-lifting, and quotient
+  identities. The more general partial-biregular realization theorem remains
+  open.

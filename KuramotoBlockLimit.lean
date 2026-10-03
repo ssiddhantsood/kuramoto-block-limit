@@ -1,3 +1,4 @@
 import KuramotoBlockLimit.Basic
 import KuramotoBlockLimit.Equitable
 import KuramotoBlockLimit.Quotient
+import KuramotoBlockLimit.CliqueBlowup

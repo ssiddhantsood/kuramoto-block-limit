@@ -51,6 +51,11 @@ realizations satisfying the spectral bounds remains open.
 
 The exact equilibrium-lifting lemma is also machine-checked in Lean.
 
+The uniform clique-blow-up special case is now completely machine-checked:
+equilibrium replication, identification of the actual blown-up Kuramoto
+Hessian, positive semidefiniteness, and the rotation-only kernel. This does not
+settle the more general partial-biregular realization problem stated above.
+
 ### A4. Optimality within the fixed topology
 
 Maximize normalized minimum degree subject to the torque and stability

@@ -23,7 +23,15 @@ has a positive-semidefinite Hessian whose kernel is again exactly rotation.
 Consequently, every clique blow-up is locally asymptotically stable modulo
 global phase rotation.
 
-## Proof
+The finite-dimensional algebraic statement is machine-checked as
+`cliqueBlowup_preserves_stable_equilibrium` in
+[`KuramotoBlockLimit/CliqueBlowup.lean`](../KuramotoBlockLimit/CliqueBlowup.lean).
+Lean verifies equilibrium replication, the actual Kuramoto Hessian matrix,
+positive semidefiniteness, and the rotation-only kernel. The final standard
+ODE implication to local asymptotic stability modulo rotation remains a
+paper-level consequence rather than a formalized dynamical-systems theorem.
+
+## Readable proof corresponding to the Lean theorem
 
 ### Equilibrium
 
@@ -53,6 +61,10 @@ clique edges vanish on a constant vector, while every original edge now has
 ```text
 H_blowup restricted to U = m H_G.
 ```
+
+This formula uses unnormalized Hessians. If each vector field includes its
+usual `1/|V|` factor, the normalized restrictions are equal instead. The
+kernel and all stability signs are unchanged.
 
 It is positive away from the replicated rotation vector.
 
@@ -114,4 +126,3 @@ Uniform clique blow-up does not reach the apparent six-block boundary near
 `0.691553760598`. Reaching that value requires independently tuning class
 proportions and cross-block densities, which is the remaining realization
 problem.
-

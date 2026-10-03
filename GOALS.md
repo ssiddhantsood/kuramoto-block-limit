@@ -1,0 +1,97 @@
+# Goals and acceptance criteria
+
+## Track A — exact block/blow-up theorem
+
+This is the current priority.
+
+### A1. Finite reduction
+
+Define the reflection-paired six-block family using three class masses, two
+fractional block densities, and three phase angles. Derive:
+
+- the three independent zero-torque equations;
+- the three normalized class degrees;
+- the mass-orthonormal quotient Hessian;
+- the even/odd reflection decomposition; and
+- the within-class transverse stability quantities.
+
+**Done when:** the formulas are stated without reference to a large adjacency
+matrix and reproduce every relevant number from a packaged finite witness.
+
+**Status:** complete at the algebraic/numerical level; interval reproduction is
+part of A2.
+
+### A2. Candidate boundary point
+
+Solve the reduced equations near the observed ultrasmall-gap sequence and
+identify the limiting point where the smallest even and odd nonrotation modes
+vanish simultaneously.
+
+**Done when:** an interval calculation encloses the candidate parameters and
+the limiting value of the normalized minimum degree.
+
+### A3. Direct lifting theorem
+
+Prove that a rational, strictly stable block solution has arbitrarily large
+simple unweighted equitable blow-ups with:
+
+- an exact class-constant Kuramoto equilibrium;
+- the same quotient stability signs; and
+- positive transverse spectrum.
+
+The proof should expose the precise spectral condition required of every
+partial biregular block.
+
+**Done when:** the theorem is written in ordinary mathematics, all hypotheses
+are checkable, and a verifier constructs/checks finite instances.
+
+**Status:** exact equilibrium lifting, quotient reduction, and the transverse
+comparison criterion are proved. Existence of arbitrarily large block
+realizations satisfying the spectral bounds remains open.
+
+### A4. Optimality within the fixed topology
+
+Maximize normalized minimum degree subject to the torque and stability
+constraints in the six-block topology.
+
+**Minimum result:** a rigorous local maximum and a certified value.
+
+**Stronger result:** a global upper bound within this fixed topology.
+
+**Explicit non-goal:** this alone is not an upper bound over all graphs or all
+step graphons.
+
+## Track B — finite-step graphon persistence
+
+### B1. Isolate the missing hypotheses
+
+Document exactly why the published theorem does not apply verbatim: a finite
+step graphon and its class-constant equilibrium have jump discontinuities, and
+the limiting optimizer also loses invertibility at its stability boundary.
+
+### B2. Partition-adapted persistence theorem
+
+Replace the continuous function space with functions continuous on each cell
+of a fixed finite partition. Prove persistence and stability after quotienting
+the global phase-rotation mode.
+
+**Done when:** the proof covers a strictly stable finite-step Kuramoto
+equilibrium and graph sequences converging in cut norm with uniformly
+convergent degree functions.
+
+### B3. Application and comparison
+
+Apply the theorem to interior points of the six-block family and compare its
+conclusion with Track A's direct equitable-blow-up theorem.
+
+**Boundary qualification:** neither persistence theorem should claim to apply
+at the marginal optimizer without an additional bifurcation/degeneracy
+argument.
+
+## Order of work
+
+1. A1 finite reduction.
+2. A2 boundary candidate and interval formulation.
+3. A3 direct lifting theorem.
+4. A4 within-family optimality.
+5. B1--B3 graphon extension.

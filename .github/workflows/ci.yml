@@ -13,4 +13,5 @@ jobs:
       - uses: leanprover/lean-action@v1
       - name: Reproduce limiting candidate
         run: python3 scripts/analyze_candidate.py
-
+      - name: Check exact clique-blow-up family arithmetic
+        run: python3 scripts/clique_blowup_family.py

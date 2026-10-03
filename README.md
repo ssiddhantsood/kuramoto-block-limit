@@ -23,6 +23,11 @@ The first exact results are in
 equilibrium lifting, the symmetric quotient formula, and a rigorous transverse
 comparison criterion.
 
+[`docs/CLIQUE_BLOWUP_THEOREM.md`](docs/CLIQUE_BLOWUP_THEOREM.md) proves an
+additional unconditional result: every clique blow-up of a strictly stable
+finite witness remains strictly stable. Applied to the `N=80,002` witness, it
+produces infinitely many stable graphs above `11/16`.
+
 ## Current evidence
 
 The five ultrasmall-gap records converge toward a six-block candidate with
@@ -39,6 +44,7 @@ Run the dependency-free reconstruction with:
 
 ```bash
 python3 scripts/analyze_candidate.py
+python3 scripts/clique_blowup_family.py
 ```
 
 The script reconstructs the six-class torques, degrees, mass-orthonormal

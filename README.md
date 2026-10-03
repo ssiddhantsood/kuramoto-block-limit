@@ -53,7 +53,8 @@ lake build
 
 The Lean proofs currently cover the degree identity, reflection reduction from
 six torques to three, and exact equilibrium lifting from equitable neighbor
-counts. See [`formal/README.md`](formal/README.md).
+counts. They also check quotient symmetry and the rotation kernel. See
+[`formal/README.md`](formal/README.md).
 
 ## Proof status
 
@@ -65,4 +66,4 @@ counts. See [`formal/README.md`](formal/README.md).
 - General graphon extension: scoped; not proved here yet.
 - Lean formalization: active. Lean 4.34.1/mathlib is pinned; the degree
   identity, reflection-torque reduction, and exact finite equilibrium lifting
-  are machine-checked.
+  are machine-checked, along with quotient symmetry and the rotation kernel.

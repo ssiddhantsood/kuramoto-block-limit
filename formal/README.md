@@ -24,10 +24,12 @@ The checked layer proves:
 - the three reflection-torque identities and reduction from six torque
   equations to three; and
 - exact lifting of a zero class torque to an actual vertex whenever its
-  neighbor counts agree with the equitable quotient.
+  neighbor counts agree with the equitable quotient;
+- symmetry of the mass-orthonormal quotient matrix; and
+- the exact global-rotation kernel identity.
 
-The next formal targets are the mass-orthonormal quotient symmetry and rotation
-kernel.
+The next formal targets are the equivalence between the matrix and row-action
+definitions and the finite transverse comparison inequality.
 
 The probabilistic or expander existence theorem for transverse stability
 should remain an ordinary proof until its exact statement and dependencies are

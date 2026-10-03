@@ -29,6 +29,10 @@ finite witness remains strictly stable. Applied to the `N=80,002` witness, it
 produces infinitely many stable graphs above `11/16`. Its finite-dimensional
 algebra is machine-checked in
 [`KuramotoBlockLimit/CliqueBlowup.lean`](KuramotoBlockLimit/CliqueBlowup.lean).
+The concrete hypothesis-by-hypothesis application to the `N=80,002` witness
+is recorded in the witness repository's
+[`CLIQUE_BLOWUP_APPLICATION.md`](https://github.com/ssiddhantsood/kuramoto-11-16-witness/blob/b4f5d8f4db1192c82f1984f80cfe964cb6dac991/records/n80002/CLIQUE_BLOWUP_APPLICATION.md),
+backed by an independent 512-bit Arb certificate.
 
 ## Current evidence
 

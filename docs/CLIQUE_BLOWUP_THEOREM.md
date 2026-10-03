@@ -31,6 +31,13 @@ positive semidefiniteness, and the rotation-only kernel. The final standard
 ODE implication to local asymptotic stability modulo rotation remains a
 paper-level consequence rather than a formalized dynamical-systems theorem.
 
+For the concrete base graph, the separate
+[`N=80,002` application audit](https://github.com/ssiddhantsood/kuramoto-11-16-witness/blob/b4f5d8f4db1192c82f1984f80cfe964cb6dac991/records/n80002/CLIQUE_BLOWUP_APPLICATION.md)
+maps each Lean hypothesis to an independent 512-bit Arb certificate. This is
+an explicit two-part proof (Arb base certificate plus universal Lean theorem),
+not a claim that the 80,002-vertex certificate itself has been imported into
+Lean.
+
 ## Readable proof corresponding to the Lean theorem
 
 ### Equilibrium

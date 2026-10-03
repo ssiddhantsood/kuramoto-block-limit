@@ -1,7 +1,11 @@
-# Formalization plan
+# Lean formalization
 
-Lean, Lake, and Elan are not currently installed on this machine, so this
-directory does not yet claim a checked formal proof.
+Lean 4.34.1 is managed by Elan and this repository pins mathlib 4.34.1.
+Build the checked layer with:
+
+```bash
+lake build
+```
 
 The first Lean targets should be finite algebraic statements rather than the
 full analytic persistence theorem:
@@ -14,8 +18,17 @@ full analytic persistence theorem:
 6. biregularity plus the class torque equations gives zero torque at every
    vertex of a finite blow-up.
 
-These statements fit Lean/mathlib's finite sums, matrices, and real
-trigonometric functions. The probabilistic or expander existence theorem for
-transverse stability should remain an ordinary proof until its exact statement
-and dependencies are settled.
+The checked layer proves:
 
+- the degree identity;
+- the three reflection-torque identities and reduction from six torque
+  equations to three; and
+- exact lifting of a zero class torque to an actual vertex whenever its
+  neighbor counts agree with the equitable quotient.
+
+The next formal targets are the mass-orthonormal quotient symmetry and rotation
+kernel.
+
+The probabilistic or expander existence theorem for transverse stability
+should remain an ordinary proof until its exact statement and dependencies are
+settled.

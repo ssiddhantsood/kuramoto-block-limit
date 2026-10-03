@@ -49,6 +49,8 @@ are checkable, and a verifier constructs/checks finite instances.
 comparison criterion are proved. Existence of arbitrarily large block
 realizations satisfying the spectral bounds remains open.
 
+The exact equilibrium-lifting lemma is also machine-checked in Lean.
+
 ### A4. Optimality within the fixed topology
 
 Maximize normalized minimum degree subject to the torque and stability

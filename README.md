@@ -45,6 +45,16 @@ The script reconstructs the six-class torques, degrees, mass-orthonormal
 quotient Hessian, transverse multiplication terms, and a simple extrapolation
 of the candidate boundary value.
 
+Build the machine-checked algebraic layer with:
+
+```bash
+lake build
+```
+
+The Lean proofs currently cover the degree identity, reflection reduction from
+six torques to three, and exact equilibrium lifting from equitable neighbor
+counts. See [`formal/README.md`](formal/README.md).
+
 ## Proof status
 
 - Exact finite-dimensional formulas: derived and numerically checked.
@@ -53,5 +63,6 @@ of the candidate boundary value.
 - Arbitrarily-large realization theorem: proof plan drafted; not proved yet.
 - Sharp upper bound within the six-block topology: conjectural.
 - General graphon extension: scoped; not proved here yet.
-- Lean formalization: planned, but no Lean toolchain is currently installed on
-  this machine.
+- Lean formalization: active. Lean 4.34.1/mathlib is pinned; the degree
+  identity, reflection-torque reduction, and exact finite equilibrium lifting
+  are machine-checked.

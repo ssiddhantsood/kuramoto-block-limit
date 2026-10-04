@@ -184,18 +184,31 @@ def solve(
     inequality_minimum = float(
         np.min(inequality_values(result.x, stability_floor, order_parameter_cap))
     )
+    feasibility_tolerance = max(1e-12, stability_floor * 1e-3)
+    strictly_positive_spectra = bool(min(
+        state["even_physical_eigenvalues"][0],
+        state["odd_eigenvalues"][0],
+        *state["transverse_values"],
+    ) > 0.0)
     if not result.success:
         raise RuntimeError(f"SLSQP failed at floor {stability_floor}: {result.message}")
-    if torque_error > 1e-10 or inequality_minimum < -1e-9:
+    if (
+        torque_error > 1e-10
+        or inequality_minimum < -feasibility_tolerance
+        or not strictly_positive_spectra
+    ):
         raise RuntimeError(
             f"invalid optimizer result at floor {stability_floor}: "
-            f"torque={torque_error}, inequality={inequality_minimum}"
+            f"torque={torque_error}, inequality={inequality_minimum}, "
+            f"positive_spectra={strictly_positive_spectra}"
         )
     diagnostics = {
         "iterations": int(result.nit),
         "function_evaluations": int(result.nfev),
         "maximum_torque_error": torque_error,
         "minimum_constraint_slack": inequality_minimum,
+        "feasibility_tolerance": feasibility_tolerance,
+        "strictly_positive_stability_spectra": strictly_positive_spectra,
         "message": str(result.message),
     }
     return result.x, diagnostics

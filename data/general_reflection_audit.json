@@ -1,0 +1,151 @@
+{
+  "source": "data/general_reflection_optimization.json",
+  "finite_difference_step": 1e-06,
+  "passed": true,
+  "audits": [
+    {
+      "stability_floor": 1e-05,
+      "mu": 0.69124958962845,
+      "passed": true,
+      "failed_checks": [],
+      "maximum_identity_errors": {
+        "weight_symmetry": 0.0,
+        "reflection_invariance": 0.0,
+        "reflected_phases": 0.0,
+        "paired_degrees": 0.0,
+        "opposite_torques": 2.0816681711721685e-17,
+        "paired_transverse_values": 2.7755575615628914e-17,
+        "rotation_kernel": 1.3877787807814457e-17,
+        "sector_spectrum": 5.551115123125783e-17,
+        "finite_difference_hessian": 2.4304641632610924e-11,
+        "positive_class_torque": 5.755812493291046e-14
+      },
+      "feasibility_slacks": {
+        "degree": -1.0336176359260207e-13,
+        "even": -1.2695041822245387e-14,
+        "odd": -2.663225576757331e-14,
+        "transverse": 0.2402487782492939,
+        "nonsynchrony": 0.9172586903474584
+      },
+      "feasibility_tolerance": 1e-08,
+      "strictly_positive_stability_spectra": true,
+      "interior_densities": {
+        "ref_C": 0.7872128358828784,
+        "opposite_BC": 0.8673071908168395
+      },
+      "boundary_density_counts": {
+        "zero": 3,
+        "one": 4,
+        "interior": 2
+      }
+    },
+    {
+      "stability_floor": 1e-07,
+      "mu": 0.6915506763258845,
+      "passed": true,
+      "failed_checks": [],
+      "maximum_identity_errors": {
+        "weight_symmetry": 0.0,
+        "reflection_invariance": 0.0,
+        "reflected_phases": 0.0,
+        "paired_degrees": 0.0,
+        "opposite_torques": 4.163336342344337e-17,
+        "paired_transverse_values": 2.7755575615628914e-17,
+        "rotation_kernel": 6.938893903907228e-18,
+        "sector_spectrum": 1.1102230246251565e-16,
+        "finite_difference_hessian": 1.8272546670194956e-11,
+        "positive_class_torque": 2.7755575615628914e-17
+      },
+      "feasibility_slacks": {
+        "degree": -3.9968028886505635e-15,
+        "even": -2.423775845017565e-15,
+        "odd": -1.9766981573458013e-16,
+        "transverse": 0.24027998402342518,
+        "nonsynchrony": 0.9174029596920408
+      },
+      "feasibility_tolerance": 1e-10,
+      "strictly_positive_stability_spectra": true,
+      "interior_densities": {
+        "ref_C": 0.7884359827253481,
+        "opposite_BC": 0.8682399816261829
+      },
+      "boundary_density_counts": {
+        "zero": 3,
+        "one": 4,
+        "interior": 2
+      }
+    },
+    {
+      "stability_floor": 1e-09,
+      "mu": 0.6915537297508917,
+      "passed": true,
+      "failed_checks": [],
+      "maximum_identity_errors": {
+        "weight_symmetry": 0.0,
+        "reflection_invariance": 0.0,
+        "reflected_phases": 0.0,
+        "paired_degrees": 0.0,
+        "opposite_torques": 2.0816681711721685e-17,
+        "paired_transverse_values": 0.0,
+        "rotation_kernel": 1.3877787807814457e-17,
+        "sector_spectrum": 1.1102230246251565e-16,
+        "finite_difference_hessian": 1.519006405034662e-11,
+        "positive_class_torque": 7.632783294297951e-17
+      },
+      "feasibility_slacks": {
+        "degree": 7.771561172376096e-16,
+        "even": -1.8890963934230494e-15,
+        "odd": -2.5347005500939666e-15,
+        "transverse": 0.24028030166420203,
+        "nonsynchrony": 0.9174044252842246
+      },
+      "feasibility_tolerance": 1.0000000000000002e-12,
+      "strictly_positive_stability_spectra": true,
+      "interior_densities": {
+        "ref_C": 0.7884483801000178,
+        "opposite_BC": 0.8682494245559309
+      },
+      "boundary_density_counts": {
+        "zero": 3,
+        "one": 4,
+        "interior": 2
+      }
+    },
+    {
+      "stability_floor": 1e-11,
+      "mu": 0.6915537602894954,
+      "passed": true,
+      "failed_checks": [],
+      "maximum_identity_errors": {
+        "weight_symmetry": 0.0,
+        "reflection_invariance": 0.0,
+        "reflected_phases": 0.0,
+        "paired_degrees": 0.0,
+        "opposite_torques": 1.3877787807814457e-17,
+        "paired_transverse_values": 2.7755575615628914e-17,
+        "rotation_kernel": 6.938893903907228e-18,
+        "sector_spectrum": 5.551115123125783e-17,
+        "finite_difference_hessian": 2.4445362400982162e-11,
+        "positive_class_torque": 3.3306690738754696e-16
+      },
+      "feasibility_slacks": {
+        "degree": -3.3306690738754696e-16,
+        "even": 3.180406792943527e-17,
+        "odd": 1.251213440009697e-16,
+        "transverse": 0.2402803048505514,
+        "nonsynchrony": 0.9174044399565089
+      },
+      "feasibility_tolerance": 1e-12,
+      "strictly_positive_stability_spectra": true,
+      "interior_densities": {
+        "ref_C": 0.7884485040907164,
+        "opposite_BC": 0.8682495189969943
+      },
+      "boundary_density_counts": {
+        "zero": 3,
+        "one": 4,
+        "interior": 2
+      }
+    }
+  ]
+}

@@ -61,11 +61,13 @@
         2.7755575615628914e-17
       ],
       "solver": {
+        "feasibility_tolerance": 1e-08,
         "function_evaluations": 55,
         "iterations": 6,
         "maximum_torque_error": 4.163336342344337e-17,
         "message": "Optimization terminated successfully",
-        "minimum_constraint_slack": -1.5543122344752192e-15
+        "minimum_constraint_slack": -1.5543122344752192e-15,
+        "strictly_positive_stability_spectra": true
       },
       "stability_floor": 1e-05,
       "transverse_values": [
@@ -111,11 +113,13 @@
         0.0
       ],
       "solver": {
+        "feasibility_tolerance": 1e-10,
         "function_evaluations": 65,
         "iterations": 8,
         "maximum_torque_error": 2.7755575615628914e-17,
         "message": "Optimization terminated successfully",
-        "minimum_constraint_slack": -3.332904182065037e-15
+        "minimum_constraint_slack": -3.332904182065037e-15,
+        "strictly_positive_stability_spectra": true
       },
       "stability_floor": 1e-07,
       "transverse_values": [
@@ -161,11 +165,13 @@
         0.0
       ],
       "solver": {
+        "feasibility_tolerance": 1.0000000000000002e-12,
         "function_evaluations": 45,
         "iterations": 5,
         "maximum_torque_error": 6.591949208711867e-17,
         "message": "Optimization terminated successfully",
-        "minimum_constraint_slack": -5.551115123125783e-16
+        "minimum_constraint_slack": -5.551115123125783e-16,
+        "strictly_positive_stability_spectra": true
       },
       "stability_floor": 1e-09,
       "transverse_values": [
@@ -211,11 +217,13 @@
         2.7755575615628914e-17
       ],
       "solver": {
+        "feasibility_tolerance": 1e-12,
         "function_evaluations": 19,
         "iterations": 2,
         "maximum_torque_error": 2.7755575615628914e-17,
         "message": "Optimization terminated successfully",
-        "minimum_constraint_slack": -5.9945232354127624e-15
+        "minimum_constraint_slack": -5.9945232354127624e-15,
+        "strictly_positive_stability_spectra": true
       },
       "stability_floor": 1e-11,
       "transverse_values": [

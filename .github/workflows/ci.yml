@@ -22,5 +22,20 @@ jobs:
         run: python3 scripts/analyze_candidate.py
       - name: Reproduce three-pair reflected optimization
         run: python scripts/optimize_reflection_model.py --out /tmp/reduced-optimization.json
+      - name: Smoke-test general reflected optimization
+        run: >-
+          python scripts/optimize_general_reflection_model.py
+          --starts 1 --floors 1e-5 --out /tmp/general-optimization.json
+      - name: Audit the saved general reflected results
+        run: python scripts/audit_general_reflection_model.py
+      - name: Certify the limiting KKT point on the discovered face
+        run: python scripts/certify_limiting_kkt.py --out /tmp/kkt-certificate.json
+      - name: Verify the exact degree-three-quarters marginal obstruction
+        run: python scripts/analyze_marginal_family.py
+      - name: Smoke-test torque-eliminated multistart search
+        run: >-
+          python scripts/search_general_reflection_model.py
+          --near-starts 0 --random-starts 0 --max-branches 1
+          --floors 1e-6 --out /tmp/general-search.json
       - name: Check exact clique-blow-up family arithmetic
         run: python3 scripts/clique_blowup_family.py

@@ -64,6 +64,13 @@ It reproduces the observed connectivity sequence while separately constraining
 the physical even, odd, and transverse stability sectors. See
 [`docs/REDUCED_OPTIMIZATION.md`](docs/REDUCED_OPTIMIZATION.md).
 
+The density pattern is now also tested rather than assumed.  The general
+nine-density search recovers the same two-interior-density face, finds two
+lower stable branches, and exposes an exact degree-`3/4` marginal family with a
+proved first-order stability obstruction.  A Krawczyk certificate establishes
+the limiting KKT root and strict local optimality on the discovered face.  See
+[`docs/GENERAL_REFLECTION_SEARCH.md`](docs/GENERAL_REFLECTION_SEARCH.md).
+
 Build the machine-checked algebraic layer with:
 
 ```bash
@@ -83,7 +90,9 @@ positive semidefiniteness, and preservation of the rotation-only kernel. See
 - Exact equilibrium lifting to equitable blow-ups: proved.
 - Quotient reduction and a checkable finite transverse criterion: proved.
 - Arbitrarily-large realization theorem: proof plan drafted; not proved yet.
-- Sharp upper bound within the six-block topology: conjectural.
+- Strict local optimum on the observed two-density face: interval-certified.
+- Sharp upper bound over the general nine-density six-block family:
+  conjectural.
 - General graphon extension: scoped; not proved here yet.
 - Lean formalization: the complete uniform clique-blow-up result is checked,
   in addition to the degree, reflection, equitable-lifting, and quotient

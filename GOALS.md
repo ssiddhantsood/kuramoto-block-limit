@@ -30,6 +30,10 @@ vanish simultaneously.
 **Done when:** an interval calculation encloses the candidate parameters and
 the limiting value of the normalized minimum degree.
 
+**Status:** complete on the discovered two-density face.  A Krawczyk
+calculation encloses the limiting KKT point and its degree.  Global uniqueness
+over other density faces is not claimed.
+
 ### A3. Direct lifting theorem
 
 Prove that a rational, strictly stable block solution has arbitrarily large
@@ -67,6 +71,10 @@ constraints in the six-block topology.
 
 **Explicit non-goal:** this alone is not an upper bound over all graphs or all
 step graphons.
+
+**Status:** the minimum result is complete on the fixed two-density topology:
+interval calculations certify LICQ, strict multiplier signs, positive reduced
+curvature, and all inactive constraints.  The global upper bound remains open.
 
 ## Track B — finite-step graphon persistence
 

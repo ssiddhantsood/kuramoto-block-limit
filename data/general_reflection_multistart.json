@@ -1,0 +1,1176 @@
+{
+  "scope": "exploratory local multistart search; no global claim",
+  "parameterization": "Six cross-pair densities are free; three reflection-pair densities are solved exactly from the torque equations.",
+  "seed": 20261004,
+  "floors": [
+    1e-06,
+    1e-08,
+    1e-10
+  ],
+  "attempt_summary": {
+    "attempts": 53,
+    "solver_successes": 17,
+    "feasible_endpoints": 17,
+    "feasible_objectives": [
+      0.09390623246248049,
+      0.6111096340394574,
+      0.6623433141147851,
+      0.6623433141147853,
+      0.662343314114786,
+      0.6843665931696453,
+      0.6843665931699378,
+      0.6843665931702992,
+      0.6843665931703035,
+      0.6843665931704099,
+      0.684366593170828,
+      0.6843665931709425,
+      0.6915229574070751,
+      0.6915229574071232,
+      0.6915229574072296,
+      0.6915229574074693,
+      0.6915229574150615
+    ]
+  },
+  "attempts": [
+    {
+      "start": "baseline",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6915229574071232,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "near_0",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999999999,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "near_1",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.11278212005806687,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_2",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7498378172721268,
+      "message": "Iteration limit reached"
+    },
+    {
+      "start": "near_3",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999999999,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "near_4",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 9.000000000000005e-11,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_5",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7500113713847252,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_6",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.684366593170828,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "near_7",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999999999,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_8",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7497617707257452,
+      "message": "Iteration limit reached"
+    },
+    {
+      "start": "near_9",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7500746776012458,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_10",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999987928269,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "near_11",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7499578386728739,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_0",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6915229574072296,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_1",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.48999000730798153,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_2",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 8.999999995356584e-11,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_3",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_4",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7487837559878504,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_5",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931704099,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_6",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999999966,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_7",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_8",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.0007665660880479814,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_9",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.007397164628824642,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_10",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931696453,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_11",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7499748736136174,
+      "message": "Iteration limit reached"
+    },
+    {
+      "start": "random_12",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_13",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.17076262409902873,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_14",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6915229574150615,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_15",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.183250423739153,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_16",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 9.000000000000005e-11,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_17",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931699378,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_18",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.0,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_19",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.0,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_20",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6915229574074693,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_21",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7498222537325401,
+      "message": "Iteration limit reached"
+    },
+    {
+      "start": "random_22",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6915229574070751,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_23",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_24",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.09390623246248049,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_25",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931709425,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_26",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6623433141147853,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_27",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.662343314114786,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_28",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6111096340394574,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_29",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6623433141147851,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_30",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_31",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999862766,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_32",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 4.81145024572919e-07,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_33",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.7496201499408637,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_34",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931703035,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_35",
+      "solver_success": true,
+      "feasible": true,
+      "mu": 0.6843665931702992,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "start": "random_36",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_37",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.9,
+      "message": "Inequality constraints incompatible"
+    },
+    {
+      "start": "random_38",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.8999999999990238,
+      "message": "Positive directional derivative for linesearch"
+    },
+    {
+      "start": "random_39",
+      "solver_success": false,
+      "feasible": false,
+      "mu": 0.0,
+      "message": "Positive directional derivative for linesearch"
+    }
+  ],
+  "branches": [
+    {
+      "branch": 0,
+      "continuation": [
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 121,
+          "stability_floor": 1e-06,
+          "mu": 0.6915229574150615,
+          "pair_masses": [
+            0.23672494151867213,
+            0.1915229574150619,
+            0.07175210106626592
+          ],
+          "densities": {
+            "ref_A": 1.0000000000000069,
+            "ref_B": 0.7883234332706291,
+            "ref_C": 2.4640527737790835e-14,
+            "same_AB": 0.8681542435260197,
+            "opposite_AB": 1.1397467437539084e-15,
+            "same_AC": 5.626316913556925e-16,
+            "opposite_AC": 0.9999999999999999,
+            "same_BC": 0.9999999999999994,
+            "opposite_BC": 0.9999999999999999
+          },
+          "angles": [
+            -2.3587487243731875,
+            -0.7295675372317979,
+            0.9566360105764409
+          ],
+          "degrees": [
+            0.7114734523161512,
+            0.6915229574150641,
+            0.6915229574150636
+          ],
+          "even_physical_eigenvalues": [
+            9.999999998835833e-07,
+            0.2562937917891661
+          ],
+          "odd_eigenvalues": [
+            9.999994750483038e-07,
+            0.0051574528438060405,
+            0.2872025954590083
+          ],
+          "transverse_values": [
+            0.24027810257197527,
+            0.2580026340980896,
+            0.27604718337566286
+          ],
+          "order_parameter": 0.03261034111190868,
+          "maximum_torque_error": 8.326672684688674e-17,
+          "minimum_constraint_slack": -5.249516961448479e-13,
+          "feasibility_tolerance": 1e-09,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 5,
+          "stability_floor": 1e-08,
+          "mu": 0.6915534521311467,
+          "pair_masses": [
+            0.2367329793565365,
+            0.19155345213115033,
+            0.07171356851231321
+          ],
+          "densities": {
+            "ref_A": 1.0000000000000018,
+            "ref_B": 0.7884472529257877,
+            "ref_C": -1.0271797656379666e-14,
+            "same_AB": 0.8682485660122331,
+            "opposite_AB": 0.0,
+            "same_AC": 0.0,
+            "opposite_AC": 0.9999999999999988,
+            "same_BC": 1.0,
+            "opposite_BC": 1.0
+          },
+          "angles": [
+            -2.3587448130214033,
+            -0.729627413228387,
+            0.9565533321343367
+          ],
+          "degrees": [
+            0.7114955373529508,
+            0.6915534521311499,
+            0.6915534521311493
+          ],
+          "even_physical_eigenvalues": [
+            9.999997787154209e-09,
+            0.25629258519714637
+          ],
+          "odd_eigenvalues": [
+            9.999999875745658e-09,
+            0.005149400485993644,
+            0.2871805156375635
+          ],
+          "transverse_values": [
+            0.2402802837445143,
+            0.25800267415706885,
+            0.27602830275876744
+          ],
+          "order_parameter": 0.03259570653186668,
+          "maximum_torque_error": 3.8163916471489756e-17,
+          "minimum_constraint_slack": -1.0271797656379666e-14,
+          "feasibility_tolerance": 1.0000000000000001e-11,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 4,
+          "stability_floor": 1e-10,
+          "mu": 0.6915537575133014,
+          "pair_masses": [
+            0.23673305984250936,
+            0.19155375751330134,
+            0.07171318264418927
+          ],
+          "densities": {
+            "ref_A": 1.0000000000000002,
+            "ref_B": 0.7884484928177898,
+            "ref_C": -4.930486495163699e-15,
+            "same_AB": 0.8682495104123421,
+            "opposite_AB": 4.031804326100378e-15,
+            "same_AC": 1.8020792881198128e-15,
+            "opposite_AC": 0.9999999999999986,
+            "same_BC": 0.9999999999999991,
+            "opposite_BC": 1.0
+          },
+          "angles": [
+            -2.358744773888835,
+            -0.7296280126791684,
+            0.9565525041761166
+          ],
+          "degrees": [
+            0.7114957585077772,
+            0.6915537575133021,
+            0.6915537575133008
+          ],
+          "even_physical_eigenvalues": [
+            9.999836876391964e-11,
+            0.256292573095535
+          ],
+          "odd_eigenvalues": [
+            9.99938779143479e-11,
+            0.005149319891655484,
+            0.28718029448137183
+          ],
+          "transverse_values": [
+            0.24028030562176284,
+            0.2580026745177053,
+            0.27602811369480906
+          ],
+          "order_parameter": 0.032595559939390104,
+          "maximum_torque_error": 1.3877787807814457e-17,
+          "minimum_constraint_slack": -6.122085652102313e-15,
+          "feasibility_tolerance": 1e-12,
+          "strictly_positive_stability_spectra": true
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "continuation": [
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 30,
+          "stability_floor": 1e-06,
+          "mu": 0.6843665931709425,
+          "pair_masses": [
+            0.1833515204867622,
+            0.08716779009722085,
+            0.22948068941601696
+          ],
+          "densities": {
+            "ref_A": 0.5301226999139781,
+            "ref_B": 0.9999999999997219,
+            "ref_C": 0.999999999999956,
+            "same_AB": 0.9999999999999296,
+            "opposite_AB": 0.99999999999995,
+            "same_AC": 0.9999999999996728,
+            "opposite_AC": 0.0,
+            "same_BC": 0.6245753068274271,
+            "opposite_BC": 2.553095788320505e-13
+          },
+          "angles": [
+            1.0013672757810992,
+            0.3676774483704076,
+            2.3806565977766736
+          ],
+          "degrees": [
+            0.6843665931709108,
+            0.6843665931709567,
+            0.6967557485641889
+          ],
+          "even_physical_eigenvalues": [
+            9.999999403243543e-07,
+            0.26615380977937175
+          ],
+          "odd_eigenvalues": [
+            9.999995390346217e-07,
+            0.04909453236119531,
+            0.28740962328358144
+          ],
+          "transverse_values": [
+            0.27405121976559355,
+            0.27497334651863475,
+            0.25230541642758586
+          ],
+          "order_parameter": 0.02801660353413965,
+          "maximum_torque_error": 2.4671359385320585e-17,
+          "minimum_constraint_slack": -4.609653782476435e-13,
+          "feasibility_tolerance": 1e-09,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 5,
+          "stability_floor": 1e-08,
+          "mu": 0.6843696905908037,
+          "pair_masses": [
+            0.18335060292271357,
+            0.08716745467257389,
+            0.22948194240471262
+          ],
+          "densities": {
+            "ref_A": 0.5301440757148891,
+            "ref_B": 0.999999999999999,
+            "ref_C": 0.9999999999999997,
+            "same_AB": 0.9999999999999999,
+            "opposite_AB": 1.0,
+            "same_AC": 0.9999999999999997,
+            "opposite_AC": 1.0123968167996652e-16,
+            "same_BC": 0.6245963141947205,
+            "opposite_BC": 6.363743255131428e-17
+          },
+          "angles": [
+            1.001357783648495,
+            0.36769622128050233,
+            2.3806541886612425
+          ],
+          "degrees": [
+            0.6843696905908035,
+            0.6843696905908034,
+            0.6967589586383637
+          ],
+          "even_physical_eigenvalues": [
+            1.0000000115035685e-08,
+            0.2661534946098789
+          ],
+          "odd_eigenvalues": [
+            9.999999730382816e-09,
+            0.049089900612725654,
+            0.2874074424805395
+          ],
+          "transverse_values": [
+            0.2740495124730596,
+            0.2749713912419132,
+            0.25230452513659923
+          ],
+          "order_parameter": 0.028015690900995482,
+          "maximum_torque_error": 4.9915252007356664e-17,
+          "minimum_constraint_slack": -2.696171847036095e-16,
+          "feasibility_tolerance": 1.0000000000000001e-11,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 2,
+          "stability_floor": 1e-10,
+          "mu": 0.6843697215676322,
+          "pair_masses": [
+            0.18335059413163607,
+            0.08716745096272273,
+            0.2294819549056412
+          ],
+          "densities": {
+            "ref_A": 0.5301442903158627,
+            "ref_B": 1.0000000000001452,
+            "ref_C": 1.0000000000000009,
+            "same_AB": 1.0,
+            "opposite_AB": 0.9999999999999999,
+            "same_AC": 0.9999999999999999,
+            "opposite_AC": 0.0,
+            "same_BC": 0.6245965241051422,
+            "opposite_BC": 0.0
+          },
+          "angles": [
+            1.0013577213754152,
+            0.3676964183189184,
+            2.3806541860034214
+          ],
+          "degrees": [
+            0.6843697215676307,
+            0.6843697215676467,
+            0.6967589908293407
+          ],
+          "even_physical_eigenvalues": [
+            1.0000951638837125e-10,
+            0.26615347919998134
+          ],
+          "odd_eigenvalues": [
+            9.99975216061255e-11,
+            0.04908985724215216,
+            0.287407410582685
+          ],
+          "transverse_values": [
+            0.2740494872464186,
+            0.274971358750541,
+            0.2523045276154532
+          ],
+          "order_parameter": 0.02801566411710832,
+          "maximum_torque_error": 2.7755575615628914e-17,
+          "minimum_constraint_slack": -1.4521717162097048e-13,
+          "feasibility_tolerance": 1e-12,
+          "strictly_positive_stability_spectra": true
+        }
+      ]
+    },
+    {
+      "branch": 2,
+      "continuation": [
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 49,
+          "stability_floor": 1e-06,
+          "mu": 0.662343314114786,
+          "pair_masses": [
+            0.10705328589425046,
+            0.21133460260568626,
+            0.18161211150006326
+          ],
+          "densities": {
+            "ref_A": 1.000000000000005,
+            "ref_B": 6.997631230129575e-15,
+            "ref_C": 1.000000000000001,
+            "same_AB": 1.0,
+            "opposite_AB": 0.9999999999999999,
+            "same_AC": 0.0,
+            "opposite_AC": 0.21900998970508725,
+            "same_BC": 0.30444020370588565,
+            "opposite_BC": 1.0
+          },
+          "angles": [
+            0.08356978355204098,
+            1.4182952047132777,
+            -2.603349349206552
+          ],
+          "degrees": [
+            0.676550643669822,
+            0.6623433141147872,
+            0.6623433141147861
+          ],
+          "even_physical_eigenvalues": [
+            9.99999999193212e-07,
+            0.11663541001033476
+          ],
+          "odd_eigenvalues": [
+            9.999999976294599e-07,
+            0.21541481059491396,
+            0.2846658545567051
+          ],
+          "transverse_values": [
+            0.2442686902669222,
+            0.2768512702429294,
+            0.28723907707112367
+          ],
+          "order_parameter": 0.034300814366237886,
+          "maximum_torque_error": 6.938893903907228e-18,
+          "minimum_constraint_slack": -5.10702591327572e-15,
+          "feasibility_tolerance": 1e-09,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 4,
+          "stability_floor": 1e-08,
+          "mu": 0.662344141182648,
+          "pair_masses": [
+            0.10705339385632431,
+            0.21133489444724665,
+            0.18161171169642912
+          ],
+          "densities": {
+            "ref_A": 0.9999999999999932,
+            "ref_B": 8.747137371804082e-16,
+            "ref_C": 0.9999999999999998,
+            "same_AB": 1.0,
+            "opposite_AB": 1.0,
+            "same_AC": 0.0,
+            "opposite_AC": 0.21901226806945306,
+            "same_BC": 0.3044448334848817,
+            "opposite_BC": 1.0
+          },
+          "angles": [
+            0.08357056037168371,
+            1.4182971917019007,
+            -2.6033507521987684
+          ],
+          "degrees": [
+            0.6765517694937517,
+            0.6623441411826483,
+            0.6623441411826481
+          ],
+          "even_physical_eigenvalues": [
+            9.999999663450945e-09,
+            0.11663410932741959
+          ],
+          "odd_eigenvalues": [
+            9.999999863056933e-09,
+            0.21541404550077153,
+            0.2846659943870644
+          ],
+          "transverse_values": [
+            0.24426785435059684,
+            0.27685080780079274,
+            0.28723842245623804
+          ],
+          "order_parameter": 0.03430092918828992,
+          "maximum_torque_error": 2.7755575615628914e-17,
+          "minimum_constraint_slack": -3.365490548706257e-16,
+          "feasibility_tolerance": 1.0000000000000001e-11,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 2,
+          "stability_floor": 1e-10,
+          "mu": 0.6623441494533574,
+          "pair_masses": [
+            0.10705339556006324,
+            0.21133489545300482,
+            0.18161170898693196
+          ],
+          "densities": {
+            "ref_A": 0.9999999999999741,
+            "ref_B": -5.248281975218383e-15,
+            "ref_C": 1.0000000000000007,
+            "same_AB": 1.0,
+            "opposite_AB": 0.9999999999999999,
+            "same_AC": 0.0,
+            "opposite_AC": 0.21901229985703916,
+            "same_BC": 0.304444874186344,
+            "opposite_BC": 1.0
+          },
+          "angles": [
+            0.08357056995621755,
+            1.418297179018333,
+            -2.6033507503123205
+          ],
+          "degrees": [
+            0.6765517800923286,
+            0.6623441494533555,
+            0.6623441494533578
+          ],
+          "even_physical_eigenvalues": [
+            9.999878294085036e-11,
+            0.11663410529382542
+          ],
+          "odd_eigenvalues": [
+            1.0000224601450185e-10,
+            0.21541403970255082,
+            0.28466599505160817
+          ],
+          "transverse_values": [
+            0.2442678589820005,
+            0.2768508043300683,
+            0.2872384068119239
+          ],
+          "order_parameter": 0.03430091535562674,
+          "maximum_torque_error": 5.551115123125783e-17,
+          "minimum_constraint_slack": -5.248281975218383e-15,
+          "feasibility_tolerance": 1e-12,
+          "strictly_positive_stability_spectra": true
+        }
+      ]
+    },
+    {
+      "branch": 3,
+      "continuation": [
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 107,
+          "stability_floor": 1e-06,
+          "mu": 0.6111096340394574,
+          "pair_masses": [
+            0.16666668354261832,
+            0.16666663073237004,
+            0.16666668572501164
+          ],
+          "densities": {
+            "ref_A": 1.0000000000000095,
+            "ref_B": -1.0248930921165324e-12,
+            "ref_C": 1.0000000000000142,
+            "same_AB": 0.9999999999999999,
+            "opposite_AB": 0.3333288770965529,
+            "same_AC": 0.3333289739860045,
+            "opposite_AC": 2.1967540368173017e-15,
+            "same_BC": 0.9999999999999898,
+            "opposite_BC": 0.333328855272557
+          },
+          "angles": [
+            -2.6182781165234137,
+            -1.5713650371743104,
+            -0.523883247537748
+          ],
+          "degrees": [
+            0.6111096340394613,
+            0.6111096340392842,
+            0.6111096340394603
+          ],
+          "even_physical_eigenvalues": [
+            9.999999936214596e-07,
+            0.1666679586423513
+          ],
+          "odd_eigenvalues": [
+            1.0000002299245062e-06,
+            0.1666675902933499,
+            0.33333354895141787
+          ],
+          "transverse_values": [
+            0.2779426765926594,
+            0.27777853428408994,
+            0.277614338066922
+          ],
+          "order_parameter": 0.0002843514020259841,
+          "maximum_torque_error": 2.7755575615628914e-17,
+          "minimum_constraint_slack": -1.0248930921165324e-12,
+          "feasibility_tolerance": 1e-09,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 13,
+          "stability_floor": 1e-08,
+          "mu": 0.6111109540203996,
+          "pair_masses": [
+            0.16666668452031938,
+            0.16666663072724205,
+            0.1666666847524386
+          ],
+          "densities": {
+            "ref_A": 0.9999999999999927,
+            "ref_B": -1.4640763379916947e-12,
+            "ref_C": 0.9999999999999877,
+            "same_AB": 0.999999999999984,
+            "opposite_AB": 0.33333282728241603,
+            "same_AC": 0.3333329339399245,
+            "opposite_AC": 4.918402953003713e-16,
+            "same_BC": 0.9999999999999837,
+            "opposite_BC": 0.33333282496122485
+          },
+          "angles": [
+            -2.6182781275133196,
+            -1.57136505917993,
+            -0.5238832585534888
+          ],
+          "degrees": [
+            0.6111109540203938,
+            0.6111109540201475,
+            0.6111109540203933
+          ],
+          "even_physical_eigenvalues": [
+            9.999998440861446e-09,
+            0.16666696867455277
+          ],
+          "odd_eigenvalues": [
+            1.000021904155839e-08,
+            0.16666660029453548,
+            0.33333354897055023
+          ],
+          "transverse_values": [
+            0.277942025879072,
+            0.277777874293322,
+            0.27761366879753396
+          ],
+          "order_parameter": 0.0002843657828097701,
+          "maximum_torque_error": 1.3877787807814457e-17,
+          "minimum_constraint_slack": -1.4640763379916947e-12,
+          "feasibility_tolerance": 1.0000000000000001e-11,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": true,
+          "feasible": false,
+          "message": "Optimization terminated successfully",
+          "iterations": 4,
+          "stability_floor": 1e-10,
+          "mu": 0.611110967201906,
+          "pair_masses": [
+            0.16666668453468203,
+            0.16666663071797105,
+            0.1666666847473469
+          ],
+          "densities": {
+            "ref_A": 1.0000000000000262,
+            "ref_B": 1.303028945128548e-10,
+            "ref_C": 1.0,
+            "same_AB": 0.9999999999999831,
+            "opposite_AB": 0.333332866720357,
+            "same_AC": 0.3333329735030286,
+            "opposite_AC": 8.134746731368247e-16,
+            "same_BC": 1.0,
+            "opposite_BC": 0.33333286459381695
+          },
+          "angles": [
+            -2.6182781273184172,
+            -1.5713650587416081,
+            -0.5238832583099589
+          ],
+          "degrees": [
+            0.6111109672019062,
+            0.611110967223625,
+            0.6111109672019229
+          ],
+          "even_physical_eigenvalues": [
+            1.0001307410720623e-10,
+            0.1666669587835195
+          ],
+          "odd_eigenvalues": [
+            9.886464120370976e-11,
+            0.16666659041335005,
+            0.3333335489556051
+          ],
+          "transverse_values": [
+            0.277942019195623,
+            0.2777778676712564,
+            0.27761366230879675
+          ],
+          "order_parameter": 0.0002843655973145953,
+          "maximum_torque_error": 6.861785714834298e-18,
+          "minimum_constraint_slack": -1.1353587962902418e-12,
+          "feasibility_tolerance": 1e-12,
+          "strictly_positive_stability_spectra": true
+        }
+      ]
+    },
+    {
+      "branch": 4,
+      "continuation": [
+        {
+          "solver_success": true,
+          "feasible": true,
+          "message": "Optimization terminated successfully",
+          "iterations": 57,
+          "stability_floor": 1e-06,
+          "mu": 0.09390623246248049,
+          "pair_masses": [
+            0.4046269353294232,
+            0.09522322502864701,
+            0.00014983964192975601
+          ],
+          "densities": {
+            "ref_A": 7.4356210640653424e-06,
+            "ref_B": 0.0014788404554873626,
+            "ref_C": 0.5248203508118906,
+            "same_AB": 0.00033132718127930046,
+            "opposite_AB": 4.075474072352916e-05,
+            "same_AC": 0.1066578734266283,
+            "opposite_AC": 0.12475054188596392,
+            "same_BC": 0.0012473465880236429,
+            "opposite_BC": 0.0004052587243503919
+          },
+          "angles": [
+            -1.9250031905867733,
+            -0.5219766149246545,
+            2.934524849710878
+          ],
+          "degrees": [
+            0.40470004897666456,
+            0.0955148469797011,
+            0.09401992284028915
+          ],
+          "even_physical_eigenvalues": [
+            1.172605168041469e-05,
+            0.03306517722824209
+          ],
+          "odd_eigenvalues": [
+            3.3364386432910524e-06,
+            0.00015307017658968826,
+            0.033201519911930884
+          ],
+          "transverse_values": [
+            0.40463922975435634,
+            0.09530352414661233,
+            0.0332746610025744
+          ],
+          "order_parameter": 0.11589449643236586,
+          "maximum_torque_error": 3.5236570605778894e-19,
+          "minimum_constraint_slack": 2.3364386432910523e-06,
+          "feasibility_tolerance": 1e-09,
+          "strictly_positive_stability_spectra": true
+        },
+        {
+          "solver_success": false,
+          "feasible": false,
+          "message": "Positive directional derivative for linesearch",
+          "iterations": 166,
+          "stability_floor": 1e-08,
+          "mu": 0.7500011492330161,
+          "pair_masses": [
+            0.2497558569872567,
+            0.24999976769028653,
+            0.00024437532245683084
+          ],
+          "densities": {
+            "ref_A": 0.9999981109222644,
+            "ref_B": 1.0000018351620394,
+            "ref_C": 1.0038532579392858,
+            "same_AB": 0.9999999766741061,
+            "opposite_AB": 9.568946268010448e-10,
+            "same_AC": 0.9999999545939198,
+            "opposite_AC": 0.999999951246404,
+            "same_BC": 4.430882133533921e-09,
+            "opposite_BC": 0.99999998542794
+          },
+          "angles": [
+            -2.3561944751671735,
+            -0.7853981744752577,
+            2.3562000748886005
+          ],
+          "degrees": [
+            0.7499997548862298,
+            0.7500002208911033,
+            0.7500011478986423
+          ],
+          "even_physical_eigenvalues": [
+            9.834464628359253e-09,
+            0.25000021939466477
+          ],
+          "odd_eigenvalues": [
+            -1.0848463553221564e-08,
+            5.370693438779981e-11,
+            0.25000021941567946
+          ],
+          "transverse_values": [
+            0.25000023244016617,
+            0.24999976706862137,
+            0.2500002194162387
+          ],
+          "order_parameter": 6.576107353220063e-07,
+          "maximum_torque_error": 2.574980159653073e-17,
+          "minimum_constraint_slack": -0.0038532579392858146,
+          "feasibility_tolerance": 1.0000000000000001e-11,
+          "strictly_positive_stability_spectra": false
+        }
+      ]
+    }
+  ]
+}

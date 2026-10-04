@@ -1,0 +1,284 @@
+{
+  "model": "general reflection-symmetric three-pair step graphon",
+  "density_order": [
+    "ref_A",
+    "ref_B",
+    "ref_C",
+    "same_AB",
+    "opposite_AB",
+    "same_AC",
+    "opposite_AC",
+    "same_BC",
+    "opposite_BC"
+  ],
+  "random_seed": 20261004,
+  "requested_multistarts": 16,
+  "local_search_warning": "Deterministic multistart SLSQP; this does not certify global optimality.",
+  "results": [
+    {
+      "stability_floor": 1e-05,
+      "mu": 0.69124958962845,
+      "pair_masses": [
+        0.07209758589629463,
+        0.23665282447529778,
+        0.19124958962840757
+      ],
+      "densities": {
+        "ref_A": 1.148389795520404e-13,
+        "ref_B": 0.999999999999998,
+        "ref_C": 0.7872128358828784,
+        "same_AB": 0.9999999999998623,
+        "opposite_AB": 3.62798171987331e-15,
+        "same_AC": 0.999999999999938,
+        "opposite_AC": 0.9999999999999598,
+        "same_BC": 2.7126760713136235e-15,
+        "opposite_BC": 0.8673071908168395
+      },
+      "angles": [
+        -0.9573770391050304,
+        -2.3587839553410404,
+        0.7290291861408592
+      ],
+      "degrees": [
+        0.6912495896283646,
+        0.711275379172368,
+        0.6912495896283467
+      ],
+      "even_physical_eigenvalues": [
+        9.999999987304959e-06,
+        0.2563045281862951
+      ],
+      "odd_eigenvalues": [
+        9.99999997337902e-06,
+        0.0052300156315959615,
+        0.28740018520162236
+      ],
+      "transverse_values": [
+        0.2762165980160931,
+        0.2402587782492939,
+        0.2580019882443501
+      ],
+      "order_parameter": 0.03274130965254152,
+      "diagnostics": {
+        "success": true,
+        "feasible": true,
+        "iterations": 510,
+        "function_evaluations": 9003,
+        "maximum_torque_error": 5.755812493291046e-14,
+        "minimum_constraint_slack": -1.0325074129013956e-13,
+        "feasibility_tolerance": 1e-08,
+        "strictly_positive_stability_spectra": true,
+        "message": "Optimization terminated successfully"
+      },
+      "search_summary": {
+        "attempted_starts": 16,
+        "feasible_starts": 10,
+        "solver_successes": 10,
+        "feasible_objectives": [
+          0.5921682627057868,
+          0.6814890543780977,
+          0.682347398894814,
+          0.6843384588043449,
+          0.6843384588044749,
+          0.6843384588045619,
+          0.6912495896280129,
+          0.69124958962805,
+          0.6912495896281009,
+          0.69124958962845
+        ]
+      }
+    },
+    {
+      "stability_floor": 1e-07,
+      "mu": 0.6915506763258845,
+      "pair_masses": [
+        0.07171707591022762,
+        0.2367322477638946,
+        0.1915506763258778
+      ],
+      "densities": {
+        "ref_A": 3.732829255203439e-14,
+        "ref_B": 0.9999999999999999,
+        "ref_C": 0.7884359827253481,
+        "same_AB": 1.0,
+        "opposite_AB": 9.73226818608404e-16,
+        "same_AC": 0.9999999999999993,
+        "opposite_AC": 0.9999999999999997,
+        "same_BC": 3.02206856898873e-15,
+        "opposite_BC": 0.8682399816261829
+      },
+      "angles": [
+        -0.9565608557466091,
+        -2.358745166898265,
+        0.7296219624927391
+      ],
+      "degrees": [
+        0.6915506763258805,
+        0.7114935271316805,
+        0.691550676325881
+      ],
+      "even_physical_eigenvalues": [
+        9.999999757622415e-08,
+        0.25629269616360967
+      ],
+      "odd_eigenvalues": [
+        9.999999980233018e-08,
+        0.00515013295247073,
+        0.2871825262817938
+      ],
+      "transverse_values": [
+        0.27603002198719345,
+        0.24028008402342518,
+        0.2580026716883172
+      ],
+      "order_parameter": 0.03259704030795918,
+      "diagnostics": {
+        "success": true,
+        "feasible": true,
+        "iterations": 7,
+        "function_evaluations": 112,
+        "maximum_torque_error": 2.7755575615628914e-17,
+        "minimum_constraint_slack": -3.9968028886505635e-15,
+        "feasibility_tolerance": 1e-10,
+        "strictly_positive_stability_spectra": true,
+        "message": "Optimization terminated successfully"
+      },
+      "search_summary": {
+        "attempted_starts": 1,
+        "feasible_starts": 1,
+        "solver_successes": 1,
+        "feasible_objectives": [
+          0.6915506763258845
+        ]
+      }
+    },
+    {
+      "stability_floor": 1e-09,
+      "mu": 0.6915537297508917,
+      "pair_masses": [
+        0.07171321772355649,
+        0.23673305252555116,
+        0.1915537297508924
+      ],
+      "densities": {
+        "ref_A": 3.216242240355161e-16,
+        "ref_B": 0.9999999999999983,
+        "ref_C": 0.7884483801000178,
+        "same_AB": 1.0,
+        "opposite_AB": 2.5921471080246527e-16,
+        "same_AC": 0.9999999999999999,
+        "opposite_AC": 1.0,
+        "same_BC": 5.587421257563624e-15,
+        "opposite_BC": 0.8682494245559309
+      },
+      "angles": [
+        -0.9565525770567377,
+        -2.358744775440924,
+        0.7296279562253017
+      ],
+      "degrees": [
+        0.6915537297508925,
+        0.7114957384024141,
+        0.6915537297508931
+      ],
+      "even_physical_eigenvalues": [
+        9.999981109036066e-10,
+        0.2562925752590668
+      ],
+      "odd_eigenvalues": [
+        9.9999746529945e-10,
+        0.005149327061970892,
+        0.2871803150830649
+      ],
+      "transverse_values": [
+        0.2760281316388013,
+        0.24028030266420203,
+        0.2580026753990458
+      ],
+      "order_parameter": 0.032595574715775344,
+      "diagnostics": {
+        "success": true,
+        "feasible": true,
+        "iterations": 5,
+        "function_evaluations": 80,
+        "maximum_torque_error": 7.632783294297951e-17,
+        "minimum_constraint_slack": -2.5347005500939666e-15,
+        "feasibility_tolerance": 1.0000000000000002e-12,
+        "strictly_positive_stability_spectra": true,
+        "message": "Optimization terminated successfully"
+      },
+      "search_summary": {
+        "attempted_starts": 1,
+        "feasible_starts": 1,
+        "solver_successes": 1,
+        "feasible_objectives": [
+          0.6915537297508917
+        ]
+      }
+    },
+    {
+      "stability_floor": 1e-11,
+      "mu": 0.6915537602894954,
+      "pair_masses": [
+        0.07171317913626142,
+        0.23673306057424354,
+        0.19155376028949506
+      ],
+      "densities": {
+        "ref_A": 1.3007831639598946e-15,
+        "ref_B": 1.0,
+        "ref_C": 0.7884485040907164,
+        "same_AB": 1.0,
+        "opposite_AB": 0.0,
+        "same_AC": 1.0,
+        "opposite_AC": 1.0,
+        "same_BC": 0.0,
+        "opposite_BC": 0.8682495189969943
+      },
+      "angles": [
+        -0.9565524942809931,
+        -2.3587447715453833,
+        0.7296280161883008
+      ],
+      "degrees": [
+        0.6915537602894951,
+        0.7114957605181682,
+        0.6915537602894952
+      ],
+      "even_physical_eigenvalues": [
+        1.0000031804067929e-11,
+        0.2562925740394722
+      ],
+      "odd_eigenvalues": [
+        1.0000125121344e-11,
+        0.005149319003858723,
+        0.28718029296273867
+      ],
+      "transverse_values": [
+        0.2760281127254908,
+        0.2402803048605514,
+        0.2580026754269926
+      ],
+      "order_parameter": 0.03259556004349112,
+      "diagnostics": {
+        "success": true,
+        "feasible": true,
+        "iterations": 4,
+        "function_evaluations": 64,
+        "maximum_torque_error": 3.3306690738754696e-16,
+        "minimum_constraint_slack": -3.3306690738754696e-16,
+        "feasibility_tolerance": 1e-12,
+        "strictly_positive_stability_spectra": true,
+        "message": "Optimization terminated successfully"
+      },
+      "search_summary": {
+        "attempted_starts": 1,
+        "feasible_starts": 1,
+        "solver_successes": 1,
+        "feasible_objectives": [
+          0.6915537602894954
+        ]
+      }
+    }
+  ]
+}

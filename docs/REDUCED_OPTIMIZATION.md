@@ -67,6 +67,15 @@ A two-point extrapolation to zero stability floor gives
 mu_* = 0.6915537605980755.
 ```
 
+This extrapolation is only a numerical preview.  The separate interval KKT
+calculation now encloses the limiting value as
+
+```text
+0.69155376059797087278515045074165659...
+```
+
+See [`GENERAL_REFLECTION_SEARCH.md`](GENERAL_REFLECTION_SEARCH.md).
+
 At the final continuation point,
 
 ```text
@@ -93,14 +102,14 @@ boundaries.
 
 This is a real reduction in computational complexity: one continuation run
 takes less than a second on a laptop and reproduces the large-graph sequence.
-It is still only a local numerical result:
+The positive-floor continuation is still numerical:
 
 - it starts from the observed two-density topology;
 - SLSQP does not prove global optimality;
-- the zero-floor value is extrapolated rather than interval-certified; and
 - it does not rule out another three-pair topology or a model with more
   reflection pairs having a larger value.
 
-The next mathematical targets are an interval enclosure of the limiting
-Karush--Kuhn--Tucker system and a search over more general
-reflection-symmetric block-density patterns.
+The limiting KKT point and strict local optimality on this fixed density face
+are now interval-certified.  A general nine-density multistart search also
+recovers this face and finds two lower stable branches, but does not prove a
+global upper bound.

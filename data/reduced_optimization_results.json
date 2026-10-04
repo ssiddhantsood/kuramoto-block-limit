@@ -1,0 +1,230 @@
+{
+  "linear_zero_floor_extrapolation": 0.6915537605980755,
+  "model": {
+    "classes": [
+      "A+",
+      "A-",
+      "B+",
+      "B-",
+      "C+",
+      "C-"
+    ],
+    "free_block_densities": 2,
+    "free_masses": 2,
+    "free_phase_angles": 3,
+    "independent_pair_classes": 3,
+    "objective": "maximize min(dA,dB,dC)",
+    "torque_equalities": 3
+  },
+  "qualifications": [
+    "SLSQP establishes only local numerical optima.",
+    "The continuation starts from the packaged near-boundary architecture.",
+    "No global upper bound or interval enclosure is claimed.",
+    "The even rotation mode is removed before imposing stability.",
+    "A nonsynchrony constraint excludes the synchronous optimum."
+  ],
+  "results": [
+    {
+      "angles": [
+        -0.7290291961108788,
+        -2.358783965553869,
+        0.9573770512785339
+      ],
+      "distinct_degrees": [
+        0.6912495896280113,
+        0.7112753791727584,
+        0.6912495896280115
+      ],
+      "even_physical_eigenvalues": [
+        1.000000000009952e-05,
+        0.2563045227694283
+      ],
+      "mu": 0.6912495896280129,
+      "odd_eigenvalues": [
+        1.0000000001392133e-05,
+        0.00523001643137068,
+        0.2874001826860214
+      ],
+      "order_parameter": 0.03274130226826083,
+      "pair_masses": [
+        0.19124958962801158,
+        0.23665282447502858,
+        0.07209758589695982
+      ],
+      "partial_block_densities": [
+        0.7872128358751896,
+        0.8673071908199628
+      ],
+      "positive_class_torques": [
+        3.469446951953614e-18,
+        -4.163336342344337e-17,
+        2.7755575615628914e-17
+      ],
+      "solver": {
+        "function_evaluations": 55,
+        "iterations": 6,
+        "maximum_torque_error": 4.163336342344337e-17,
+        "message": "Optimization terminated successfully",
+        "minimum_constraint_slack": -1.5543122344752192e-15
+      },
+      "stability_floor": 1e-05,
+      "transverse_values": [
+        0.2580019835897505,
+        0.24025878318197907,
+        0.27621659417168143
+      ]
+    },
+    {
+      "angles": [
+        -0.7296219632049282,
+        -2.3587451676277165,
+        0.9565608566156067
+      ],
+      "distinct_degrees": [
+        0.6915506763259248,
+        0.711493527131749,
+        0.6915506763259247
+      ],
+      "even_physical_eigenvalues": [
+        9.999999989399872e-08,
+        0.2562926957768214
+      ],
+      "mu": 0.691550676325926,
+      "odd_eigenvalues": [
+        9.999999666709581e-08,
+        0.005150133009389813,
+        0.2871825261012598
+      ],
+      "order_parameter": 0.0325970397806659,
+      "pair_masses": [
+        0.19155067632592482,
+        0.2367322477638894,
+        0.07171707591018575
+      ],
+      "partial_block_densities": [
+        0.788435982725082,
+        0.8682399816266033
+      ],
+      "positive_class_torques": [
+        1.734723475976807e-17,
+        2.7755575615628914e-17,
+        0.0
+      ],
+      "solver": {
+        "function_evaluations": 65,
+        "iterations": 8,
+        "maximum_torque_error": 2.7755575615628914e-17,
+        "message": "Optimization terminated successfully",
+        "minimum_constraint_slack": -3.332904182065037e-15
+      },
+      "stability_floor": 1e-07,
+      "transverse_values": [
+        0.2580026713558252,
+        0.24028008437577122,
+        0.2760300217121373
+      ]
+    },
+    {
+      "angles": [
+        -0.7296279579354903,
+        -2.3587447771928667,
+        0.9565525791441406
+      ],
+      "distinct_degrees": [
+        0.6915537297508694,
+        0.7114957384024855,
+        0.6915537297508698
+      ],
+      "even_physical_eigenvalues": [
+        1.0000005959686452e-09,
+        0.2562925743301281
+      ],
+      "mu": 0.6915537297508699,
+      "odd_eigenvalues": [
+        9.999995123842755e-10,
+        0.005149327198703671,
+        0.28718031464954863
+      ],
+      "order_parameter": 0.032595573449445595,
+      "pair_masses": [
+        0.19155372975086982,
+        0.23673305252550436,
+        0.07171321772362584
+      ],
+      "partial_block_densities": [
+        0.7884483800988518,
+        0.8682494245565361
+      ],
+      "positive_class_torques": [
+        6.591949208711867e-17,
+        0.0,
+        0.0
+      ],
+      "solver": {
+        "function_evaluations": 45,
+        "iterations": 5,
+        "maximum_torque_error": 6.591949208711867e-17,
+        "message": "Optimization terminated successfully",
+        "minimum_constraint_slack": -5.551115123125783e-16
+      },
+      "stability_floor": 1e-09,
+      "transverse_values": [
+        0.2580026746005007,
+        0.24028030351041996,
+        0.27602813097826956
+      ]
+    },
+    {
+      "angles": [
+        -0.72962801193475,
+        -2.3587447671878667,
+        0.9565524890889642
+      ],
+      "distinct_degrees": [
+        0.6915537602896056,
+        0.711495760518028,
+        0.6915537602896055
+      ],
+      "even_physical_eigenvalues": [
+        9.997471765494725e-12,
+        0.25629257634996827
+      ],
+      "mu": 0.6915537602896035,
+      "odd_eigenvalues": [
+        9.994005476764587e-12,
+        0.005149318663760647,
+        0.28718029404096235
+      ],
+      "order_parameter": 0.03259556319313757,
+      "pair_masses": [
+        0.19155376028960544,
+        0.2367330605743739,
+        0.0717131791360207
+      ],
+      "partial_block_densities": [
+        0.7884485040938363,
+        0.868249518995658
+      ],
+      "positive_class_torques": [
+        -2.7755575615628914e-17,
+        0.0,
+        2.7755575615628914e-17
+      ],
+      "solver": {
+        "function_evaluations": 19,
+        "iterations": 2,
+        "maximum_torque_error": 2.7755575615628914e-17,
+        "message": "Optimization terminated successfully",
+        "minimum_constraint_slack": -5.9945232354127624e-15
+      },
+      "stability_floor": 1e-11,
+      "transverse_values": [
+        0.25800267741317306,
+        0.24028030275580667,
+        0.27602811436836167
+      ]
+    }
+  ],
+  "schema": "three-pair-reflection-optimization-v1",
+  "status": "local_numerical_continuation_not_global_certificate"
+}

@@ -11,7 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: leanprover/lean-action@v1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install reduced-optimization dependencies
+        run: python -m pip install -r requirements-optimization.txt
       - name: Reproduce limiting candidate
         run: python3 scripts/analyze_candidate.py
+      - name: Reproduce three-pair reflected optimization
+        run: python scripts/optimize_reflection_model.py --out /tmp/reduced-optimization.json
       - name: Check exact clique-blow-up family arithmetic
         run: python3 scripts/clique_blowup_family.py

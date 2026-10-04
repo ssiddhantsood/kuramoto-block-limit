@@ -57,6 +57,13 @@ The script reconstructs the six-class torques, degrees, mass-orthonormal
 quotient Hessian, transverse multiplication terms, and a simple extrapolation
 of the candidate boundary value.
 
+The actual reduced optimization over three classes plus their reflected
+partners is implemented in
+[`scripts/optimize_reflection_model.py`](scripts/optimize_reflection_model.py).
+It reproduces the observed connectivity sequence while separately constraining
+the physical even, odd, and transverse stability sectors. See
+[`docs/REDUCED_OPTIMIZATION.md`](docs/REDUCED_OPTIMIZATION.md).
+
 Build the machine-checked algebraic layer with:
 
 ```bash

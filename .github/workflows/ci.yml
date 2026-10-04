@@ -15,6 +15,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-optimization.txt
       - name: Install reduced-optimization dependencies
         run: python -m pip install -r requirements-optimization.txt
       - name: Reproduce limiting candidate

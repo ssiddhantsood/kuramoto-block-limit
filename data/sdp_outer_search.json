@@ -1,0 +1,89 @@
+{
+  "scope": "Differential evolution over five outer variables with an approximately solved convex density SDP at each evaluation. Neither the SDP values nor the outer search are interval-certified.",
+  "outer_bounds": {
+    "mass_logits": [
+      [
+        -3.0,
+        3.0
+      ],
+      [
+        -3.0,
+        3.0
+      ]
+    ],
+    "angles": [
+      [
+        -3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        -3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    ]
+  },
+  "stability_floor": 1e-06,
+  "seed": 20261004,
+  "iterations": 80,
+  "population_per_dimension": 8,
+  "evaluations": 3240,
+  "feasible_evaluations": 1360,
+  "optimizer_message": "Maximum number of iterations has been exceeded.",
+  "best": {
+    "feasible": true,
+    "status": "optimal",
+    "mu": 0.6915229574120894,
+    "pair_masses": [
+      0.23672494151867224,
+      0.19152295741506187,
+      0.07175210106626594
+    ],
+    "angles": [
+      -2.3587487243731875,
+      -0.7295675372317979,
+      0.9566360105764409
+    ],
+    "densities": {
+      "ref_A": 0.9999999999746452,
+      "ref_B": 0.7883234338594675,
+      "ref_C": 4.473380224821512e-09,
+      "same_AB": 0.8681542435120613,
+      "opposite_AB": -3.0720230725250004e-11,
+      "same_AC": 1.0121735721280546e-11,
+      "opposite_AC": 0.9999999999534178,
+      "same_BC": 0.99999999837199,
+      "opposite_BC": 0.9999999999348304
+    },
+    "degrees": [
+      0.7114734522989743,
+      0.6915229573957744,
+      0.6915229574031225
+    ],
+    "even_physical_eigenvalues": [
+      1.0000113948152457e-06,
+      0.2562937918184086
+    ],
+    "odd_eigenvalues": [
+      9.999981371127128e-07,
+      0.0051574528483444605,
+      0.2872025953059391
+    ],
+    "transverse_values": [
+      0.2402781025766998,
+      0.2580026341270063,
+      0.2760471832874059
+    ],
+    "order_parameter": 0.032610341111908595,
+    "maximum_torque_error": 3.9909742177712815e-13,
+    "minimum_stability_value": 9.999981371127128e-07,
+    "minimum_degree_slack": -1.63149493914716e-11,
+    "minimum_density_box_slack": -3.0720230725250004e-11,
+    "validation_tolerance": 5e-09,
+    "strictly_positive_when_requested": true,
+    "model_boundary": "The sectors are complete for the ideal reflected step graphon. Finite partial-block realizations require separate centered-adjacency estimates."
+  }
+}

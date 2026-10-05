@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Interval-enclose the limiting KKT point on the discovered density face.
+"""Interval-certify the limiting KKT point and full-model local optimality.
 
 The general nine-density search puts seven densities on box boundaries.  On
 that face only ``x`` and ``y`` remain free, giving the topology used by
@@ -11,8 +11,10 @@ and the weak even/odd stability constraints are active.  This script:
    Krawczyk interval inclusion; and
 3. reports multiplier signs, constraint rank, and reduced curvature.
 
-This is a local certificate on the discovered active face.  It is not a global
-upper bound over all reflection-symmetric graphons.
+The seven remaining density-bound multipliers are then interval-checked.  Their
+strict signs extend the second-order certificate from the active face to the
+full nine-density three-pair reflected model.  This is still a local result,
+not a global upper bound over all reflection-symmetric graphons.
 """
 
 from __future__ import annotations
@@ -170,6 +172,144 @@ def symbolic_system():
             sp.pi - gamma,
         ]
     )
+
+    # Recover the KKT multipliers for the seven density bounds that define the
+    # discovered face inside the full nine-density reflection-symmetric model.
+    # A strict sign for each multiplier extends the critical cone calculation
+    # from the face to the full density space.
+    (
+        ref_a,
+        ref_b,
+        ref_c,
+        same_ab,
+        opposite_ab,
+        same_ac,
+        opposite_ac,
+        same_bc,
+        opposite_bc,
+    ) = sp.symbols(
+        "ref_a ref_b ref_c same_ab opposite_ab same_ac opposite_ac same_bc opposite_bc",
+        real=True,
+    )
+    all_densities = (
+        ref_a,
+        ref_b,
+        ref_c,
+        same_ab,
+        opposite_ab,
+        same_ac,
+        opposite_ac,
+        same_bc,
+        opposite_bc,
+    )
+    general_weights = sp.eye(6)
+    for pair, value in enumerate((ref_a, ref_b, ref_c)):
+        plus, minus = 2 * pair, 2 * pair + 1
+        general_weights[plus, minus] = value
+        general_weights[minus, plus] = value
+    for left, right, same_value, opposite_value in (
+        (0, 1, same_ab, opposite_ab),
+        (0, 2, same_ac, opposite_ac),
+        (1, 2, same_bc, opposite_bc),
+    ):
+        lp, lm = 2 * left, 2 * left + 1
+        rp, rm = 2 * right, 2 * right + 1
+        general_weights[lp, rp] = general_weights[rp, lp] = same_value
+        general_weights[lm, rm] = general_weights[rm, lm] = same_value
+        general_weights[lp, rm] = general_weights[rm, lp] = opposite_value
+        general_weights[lm, rp] = general_weights[rp, lm] = opposite_value
+
+    general_torques = []
+    general_degrees = []
+    general_laplacian = sp.zeros(6, 6)
+    for i in range(6):
+        general_degrees.append(
+            sum(masses[j] * general_weights[i, j] for j in range(6))
+        )
+        general_torques.append(
+            sum(
+                masses[j]
+                * general_weights[i, j]
+                * sp.sin(phases[j] - phases[i])
+                for j in range(6)
+            )
+        )
+        for j in range(6):
+            if i == j:
+                continue
+            cosine_weight = (
+                masses[j]
+                * general_weights[i, j]
+                * sp.cos(phases[i] - phases[j])
+            )
+            general_laplacian[i, i] += cosine_weight
+            general_laplacian[i, j] = -cosine_weight
+    general_even = sp.Matrix(
+        3,
+        3,
+        lambda i, j: general_laplacian[2 * i, 2 * j]
+        + general_laplacian[2 * i, 2 * j + 1],
+    )
+    general_odd = sp.Matrix(
+        3,
+        3,
+        lambda i, j: general_laplacian[2 * i, 2 * j]
+        - general_laplacian[2 * i, 2 * j + 1],
+    )
+    general_even_second_coefficient = sum(
+        general_even.extract(indices, indices).det()
+        for indices in ((0, 1), (0, 2), (1, 2))
+    )
+    general_constraints = (
+        a + b + c - sp.Rational(1, 2),
+        general_torques[0],
+        general_torques[2],
+        general_torques[4],
+        general_degrees[0] - mu,
+        general_degrees[4] - mu,
+        general_even_second_coefficient,
+        general_odd.det(),
+    )
+    general_lagrangian = objective + sum(
+        multipliers[index] * general_constraints[index] for index in range(8)
+    )
+    face_substitution = {
+        ref_a: x,
+        ref_b: 1,
+        ref_c: 0,
+        same_ab: y,
+        opposite_ab: 0,
+        same_ac: 1,
+        opposite_ac: 1,
+        same_bc: 0,
+        opposite_bc: 1,
+    }
+    density_stationarity_residuals = {
+        density: sp.diff(general_lagrangian, density).subs(face_substitution)
+        for density in all_densities
+    }
+    # For g=q>=0, lambda=-dL/dq.  For g=1-q>=0,
+    # lambda=dL/dq.  Our convention requires every inequality multiplier <=0.
+    boundary_multiplier_names = (
+        "ref_B_upper",
+        "ref_C_lower",
+        "opposite_AB_lower",
+        "same_AC_upper",
+        "opposite_AC_upper",
+        "same_BC_lower",
+        "opposite_BC_upper",
+    )
+    boundary_multiplier_expressions = sp.Matrix(
+        [
+            density_stationarity_residuals[ref_b],
+            -density_stationarity_residuals[ref_c],
+            -density_stationarity_residuals[opposite_ab],
+            density_stationarity_residuals[same_ac],
+            density_stationarity_residuals[opposite_ac],
+            -density_stationarity_residuals[same_bc],
+            density_stationarity_residuals[opposite_bc],
+        ]
+    )
     return {
         "variables": variables,
         "multipliers": multipliers,
@@ -180,6 +320,8 @@ def symbolic_system():
         "constraint_jacobian": constraint_jacobian,
         "lagrangian_hessian": lagrangian_hessian,
         "inactive": inactive,
+        "boundary_multiplier_names": boundary_multiplier_names,
+        "boundary_multiplier_expressions": boundary_multiplier_expressions,
     }
 
 
@@ -517,6 +659,24 @@ def interval_local_conditions(system, box: Sequence[Any]) -> dict[str, Any]:
         for name, value in zip(inactive_names, inactive_values)
     }
     inactive_positive = all(interval_bounds(value)[0] > 0 for value in inactive_values)
+    boundary_multiplier_function = interval_lambdify(
+        system["symbols"], system["boundary_multiplier_expressions"]
+    )
+    boundary_multiplier_values = [
+        row[0] for row in boundary_multiplier_function(*box)
+    ]
+    boundary_multiplier_bounds = {
+        name: {
+            "lower": mp.nstr(interval_bounds(value)[0], 30),
+            "upper": mp.nstr(interval_bounds(value)[1], 30),
+        }
+        for name, value in zip(
+            system["boundary_multiplier_names"], boundary_multiplier_values
+        )
+    }
+    strict_boundary_multiplier_signs = all(
+        interval_bounds(value)[1] < 0 for value in boundary_multiplier_values
+    )
     return {
         "licq_minor_omitted_variable_index": licq_index,
         "licq_minor_determinant": {
@@ -536,6 +696,24 @@ def interval_local_conditions(system, box: Sequence[Any]) -> dict[str, Any]:
         "positive_reduced_curvature_certified": curvature_lower > 0,
         "inactive_constraint_bounds": inactive_bounds,
         "inactive_constraints_positive_certified": inactive_positive,
+        "full_model_density_bound_multiplier_bounds": boundary_multiplier_bounds,
+        "strict_density_bound_multiplier_signs_certified": (
+            strict_boundary_multiplier_signs
+        ),
+        "full_active_gradient_licq_certified": bool(
+            interval_excludes_zero(licq_value)
+        ),
+        "full_licq_reduction": (
+            "The seven active density bounds have independent coordinate "
+            "gradients. Eliminating their columns leaves the certified "
+            "eight-by-nine face Jacobian minor."
+        ),
+        "full_critical_cone_reduction": (
+            "Strict signs for all face and density-bound multipliers force "
+            "critical directions to be tangent to every active constraint; "
+            "the full critical cone is therefore the certified one-dimensional "
+            "face tangent."
+        ),
     }
 
 
@@ -609,8 +787,10 @@ def main() -> None:
     payload = {
         "scope": (
             "A unique limiting KKT root in the certified box on the density "
-            "face discovered by the general nine-density search; no global "
-            "uniqueness or optimality claim."
+            "face discovered by the general nine-density search. Strict "
+            "density-bound multipliers extend local optimality to the full "
+            "nine-density three-pair model; no global uniqueness or "
+            "optimality claim."
         ),
         "variable_order": [str(value) for value in system["variables"]],
         "variables": [mp.nstr(value, 60) for value in variables],
@@ -627,6 +807,8 @@ def main() -> None:
         interval_conditions["strict_multiplier_signs_certified"],
         interval_conditions["positive_reduced_curvature_certified"],
         interval_conditions["inactive_constraints_positive_certified"],
+        interval_conditions["strict_density_bound_multiplier_signs_certified"],
+        interval_conditions["full_active_gradient_licq_certified"],
     ]
     payload["all_interval_local_certificate_checks_pass"] = all(checks)
     if not payload["all_interval_local_certificate_checks_pass"]:

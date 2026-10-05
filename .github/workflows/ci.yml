@@ -28,7 +28,7 @@ jobs:
           --starts 1 --floors 1e-5 --out /tmp/general-optimization.json
       - name: Audit the saved general reflected results
         run: python scripts/audit_general_reflection_model.py
-      - name: Certify the limiting KKT point on the discovered face
+      - name: Certify full-model local optimality at the limiting KKT point
         run: python scripts/certify_limiting_kkt.py --out /tmp/kkt-certificate.json
       - name: Verify the exact degree-three-quarters marginal obstruction
         run: python scripts/analyze_marginal_family.py

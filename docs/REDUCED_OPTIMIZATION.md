@@ -109,7 +109,9 @@ The positive-floor continuation is still numerical:
 - it does not rule out another three-pair topology or a model with more
   reflection pairs having a larger value.
 
-The limiting KKT point and strict local optimality on this fixed density face
-are now interval-certified.  A general nine-density multistart search also
-recovers this face and finds two lower stable branches, but does not prove a
-global upper bound.
+The limiting KKT point is interval-certified.  Strict interval signs for the
+seven density-bound multipliers extend the local-optimality result from this
+face to the full nine-density three-pair model.  A general nine-density
+multistart search also recovers this face and finds two lower stable branches,
+and a fixed-mass/phase SDP optimizes all nine densities simultaneously.  None
+of these calculations proves a global upper bound.

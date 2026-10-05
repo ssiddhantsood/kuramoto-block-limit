@@ -30,9 +30,11 @@ vanish simultaneously.
 **Done when:** an interval calculation encloses the candidate parameters and
 the limiting value of the normalized minimum degree.
 
-**Status:** complete on the discovered two-density face.  A Krawczyk
-calculation encloses the limiting KKT point and its degree.  Global uniqueness
-over other density faces is not claimed.
+**Status:** complete locally in the full nine-density reflected model.  A
+Krawczyk calculation encloses the limiting KKT point and its degree; interval
+bounds on the seven density-bound multipliers, together with LICQ and reduced
+curvature, extend the strict local result off the discovered face.  Global
+uniqueness over other density faces is not claimed.
 
 ### A3. Direct lifting theorem
 
@@ -72,9 +74,12 @@ constraints in the six-block topology.
 **Explicit non-goal:** this alone is not an upper bound over all graphs or all
 step graphons.
 
-**Status:** the minimum result is complete on the fixed two-density topology:
-interval calculations certify LICQ, strict multiplier signs, positive reduced
-curvature, and all inactive constraints.  The global upper bound remains open.
+**Status:** the minimum result is complete in the full nine-density
+three-reflected-pair model: interval calculations certify LICQ, strict
+multiplier signs (including all seven active density bounds), positive reduced
+curvature, and all inactive constraints.  A complementary formulation reduces
+the numerical search to five nonlinear mass/phase variables with a convex SDP
+over all densities.  The global upper bound remains open.
 
 ## Track B — finite-step graphon persistence
 

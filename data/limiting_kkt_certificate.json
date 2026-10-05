@@ -1,5 +1,5 @@
 {
-  "scope": "A unique limiting KKT root in the certified box on the density face discovered by the general nine-density search; no global uniqueness or optimality claim.",
+  "scope": "A unique limiting KKT root in the certified box on the density face discovered by the general nine-density search. Strict density-bound multipliers extend local optimality to the full nine-density three-pair model; no global uniqueness or optimality claim.",
   "variable_order": [
     "a",
     "b",
@@ -297,7 +297,41 @@
         "upper": "2.18504016148663339341863931733"
       }
     },
-    "inactive_constraints_positive_certified": true
+    "inactive_constraints_positive_certified": true,
+    "full_model_density_bound_multiplier_bounds": {
+      "ref_B_upper": {
+        "lower": "-0.149867063922813558139423066607",
+        "upper": "-0.149867063922813558139378258952"
+      },
+      "ref_C_lower": {
+        "lower": "-0.00350792040017094221958290452356",
+        "upper": "-0.00350792040017094221955112088358"
+      },
+      "opposite_AB_lower": {
+        "lower": "-11.312990149174307937427626611",
+        "upper": "-11.312990149174307937426841113"
+      },
+      "same_AC_upper": {
+        "lower": "-0.0774366788808738667719742941283",
+        "upper": "-0.0774366788808738667719319792396"
+      },
+      "opposite_AC_upper": {
+        "lower": "-0.315221245056559732606054199347",
+        "upper": "-0.31522124505655973260597412818"
+      },
+      "same_BC_lower": {
+        "lower": "-3.76708783330447218973199918639",
+        "upper": "-3.76708783330447218973159458365"
+      },
+      "opposite_BC_upper": {
+        "lower": "-0.0276931488628282523286148058117",
+        "upper": "-0.0276931488628282523285759233396"
+      }
+    },
+    "strict_density_bound_multiplier_signs_certified": true,
+    "full_active_gradient_licq_certified": true,
+    "full_licq_reduction": "The seven active density bounds have independent coordinate gradients. Eliminating their columns leaves the certified eight-by-nine face Jacobian minor.",
+    "full_critical_cone_reduction": "Strict signs for all face and density-bound multipliers force critical directions to be tangent to every active constraint; the full critical cone is therefore the certified one-dimensional face tangent."
   },
   "local_optimality_diagnostics": {
     "constraint_jacobian_singular_values": [

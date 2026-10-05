@@ -1,0 +1,2 @@
+-r requirements-optimization.txt
+cvxpy>=1.7,<2

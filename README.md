@@ -68,7 +68,10 @@ The density pattern is now also tested rather than assumed.  The general
 nine-density search recovers the same two-interior-density face, finds two
 lower stable branches, and exposes an exact degree-`3/4` marginal family with a
 proved first-order stability obstruction.  A Krawczyk certificate establishes
-the limiting KKT root and strict local optimality on the discovered face.  See
+the limiting KKT root, and interval bounds on all seven active density-bound
+multipliers extend strict local optimality to the full nine-density model.
+For fixed masses and phases, the complete density layer is also formulated as
+a convex semidefinite program, leaving only five nonlinear outer variables.  See
 [`docs/GENERAL_REFLECTION_SEARCH.md`](docs/GENERAL_REFLECTION_SEARCH.md).
 
 Build the machine-checked algebraic layer with:
@@ -90,7 +93,8 @@ positive semidefiniteness, and preservation of the rotation-only kernel. See
 - Exact equilibrium lifting to equitable blow-ups: proved.
 - Quotient reduction and a checkable finite transverse criterion: proved.
 - Arbitrarily-large realization theorem: proof plan drafted; not proved yet.
-- Strict local optimum on the observed two-density face: interval-certified.
+- Strict local optimum in the full nine-density three-pair model:
+  interval-certified.
 - Sharp upper bound over the general nine-density six-block family:
   conjectural.
 - General graphon extension: scoped; not proved here yet.

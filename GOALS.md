@@ -82,10 +82,13 @@ the numerical search to five nonlinear mass/phase variables with a convex SDP
 over all densities.  A stability-margin search comprising 6,060 outer
 evaluations and 5,951 SDP calls found no strict counterexample, while an
 exact-decimal dual plus interval arithmetic now gives
-rigorous upper bounds on individual outer boxes.  The exact degree-`3/4`
-marginal obstruction has been extended through second order.  The global upper
-bound remains open because the outer domain and higher-order marginal
-approaches have not been exhaustively excluded.
+rigorous upper bounds on individual outer boxes.  A first exact-box
+branch-and-bound run is reproducible, but it leaves most of the domain volume
+unresolved and is not a global certificate.  The exact degree-`3/4` family is
+now known to lie on a six-dimensional marginal sheet; every second-flat
+critical direction is tangent to that sheet.  The global upper bound remains
+open because the outer domain and all-orders approaches transverse to the
+marginal sheet have not been exhaustively excluded.
 
 ## Track B — finite-step graphon persistence
 

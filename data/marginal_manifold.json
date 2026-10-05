@@ -1,0 +1,102 @@
+{
+  "scope": "Exact marginal-sheet and second-jet calculation. No all-orders or punctured-neighborhood exclusion is claimed.",
+  "mass_domain": "A>0, B>0, C=1/2-A-B>0",
+  "fixed_phases": [
+    "-pi/4",
+    "-3*pi/4",
+    "pi/4"
+  ],
+  "missing_densities": {
+    "t_AB": 0,
+    "s_BC": 0
+  },
+  "free_coordinates": [
+    "A",
+    "B",
+    "s_AB",
+    "s_AC",
+    "t_AC",
+    "t_BC"
+  ],
+  "reflected_densities": {
+    "v_A": "(B*s_AB-C*s_AC)/A",
+    "v_B": "(A*s_AB+C*t_BC)/B",
+    "v_C": "(B*t_BC-A*s_AC)/C"
+  },
+  "even_matrix": "t_AC*[[C,0,-sqrt(A*C)],[0,0,0],[-sqrt(A*C),0,A]]",
+  "odd_matrix": "t_AC*[[C,0,+sqrt(A*C)],[0,0,0],[+sqrt(A*C),0,A]]",
+  "strong_eigenvalue": "t_AC*(A+C)",
+  "zero_eigenvalues_including_rotation": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "extra_nonrotation_zero_eigenvalues": [
+    0,
+    0,
+    0
+  ],
+  "degree_three_quarters_base": {
+    "masses": [
+      "a",
+      "1/4",
+      "1/4-a"
+    ],
+    "densities": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  "first_critical_phase_conditions": [
+    "d(theta_B)=0",
+    "(1/4-a)*d(theta_C)=a*d(theta_A)"
+  ],
+  "second_jet_compatibility": [
+    "0",
+    "0",
+    "4*a*d(theta_A)^2/(4*a-1)",
+    "0"
+  ],
+  "second_jet_conclusion": "Since 0<a<1/4, a second-flat extension exists only when all three phase derivatives vanish. The six remaining first directions are exactly tangent to the explicit marginal sheet.",
+  "explicit_nonuniform_flat_path": {
+    "mass_derivatives": [
+      0,
+      0
+    ],
+    "existing_density_derivatives": {
+      "v_A": -1,
+      "v_B": -1,
+      "v_C": -1,
+      "s_AB": -1,
+      "s_AC": -1,
+      "t_AC": "-1/2",
+      "t_BC": -1
+    },
+    "second_jet": 0,
+    "third_jet": 0,
+    "behavior": "The path remains exactly marginal: every weak eigenvalue is identically zero and the strong eigenvalue is (1-t/2)/4."
+  },
+  "all_orders_status": "The exact sheet and transverse quadratic compatibility suggest a Lyapunov-Schmidt or analytic-curve valuation proof, but the valuation step has not been completed here.",
+  "checks": {
+    "marginal_torques_vanish": true,
+    "marginal_even_formula": true,
+    "marginal_odd_formula": true,
+    "marginal_even_rank_one_identity": true,
+    "marginal_odd_rank_one_identity": true,
+    "first_critical_parameterization": true,
+    "reduced_jacobian_rank_five": true,
+    "compatibility_cokernel_dimension_four": true,
+    "second_jet_compatibility": true,
+    "compatible_space_equals_sheet_tangent": true,
+    "explicit_nonuniform_path": true,
+    "explicit_path_is_flat_through_cubic": true
+  }
+}

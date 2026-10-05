@@ -1,0 +1,504 @@
+{
+  "scope": "Prototype rigorous dual pruning for target mu_star+offset; unresolved boxes are not certified.",
+  "mu_star_decimal": "0.691553760597970872785150450741656591894008677239560671485929",
+  "target_offset": "1e-8",
+  "target_exact_fraction": "691553770597970872785150450741656591894008677239560671485929/1000000000000000000000000000000000000000000000000000000000000",
+  "certification_rule": "Only interval common-dual upper <= 0 is pruned; this proves no density with degree>=target and strictly positive common stability margin in that box.",
+  "domain": "Exact rational u,v,wA,wB,wC in [0,1], theta=pi*w; boxes unable to straddle pi/2 are rejected.",
+  "limits": {
+    "max_nodes": 600,
+    "max_depth": 35,
+    "interval_dps": 60,
+    "dual_cap": 1.0,
+    "strategy": "depth"
+  },
+  "stats": {
+    "processed": 600,
+    "pruned_dual": 470,
+    "rejected_semicircle": 116,
+    "selector_failures": 0,
+    "depth_limited": 0
+  },
+  "exact_volume_accounting": {
+    "root": {
+      "fraction": "1/1",
+      "decimal": "1.0"
+    },
+    "dual_pruned": {
+      "fraction": "1679/16777216",
+      "decimal": "0.00010007619857788085938"
+    },
+    "semicircle_rejected": {
+      "fraction": "21665/16777216",
+      "decimal": "0.0012913346290588378906"
+    },
+    "unresolved": {
+      "fraction": "1047117/1048576",
+      "decimal": "0.99860858917236328125"
+    },
+    "sum": {
+      "fraction": "1/1",
+      "decimal": "1.0"
+    },
+    "identity": "dual_pruned + semicircle_rejected + unresolved = root exactly over Fraction endpoints",
+    "full_straddling_domain_volume": {
+      "fraction": "3/4",
+      "decimal": "0.75"
+    },
+    "note": "Unresolved volume can still contain boxes later rejected by the semicircle test; dual-pruned/root is therefore only a conservative completed-coverage measure."
+  },
+  "remaining_unresolved_boxes": 15,
+  "maximum_depth_remaining": 21,
+  "worst_pruned_upper": "-0.00033585112462874988637",
+  "elapsed_seconds": 39.254744499980006,
+  "unresolved_preview": [
+    {
+      "depth": 21,
+      "selector_upper": "0.0484125676151828",
+      "box": [
+        {
+          "lower": {
+            "fraction": "1/16",
+            "decimal": "0.0625"
+          },
+          "upper": {
+            "fraction": "3/32",
+            "decimal": "0.09375"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/16",
+            "decimal": "0.0625"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "7/16",
+            "decimal": "0.4375"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 21,
+      "selector_upper": "0.0386732627704208",
+      "box": [
+        {
+          "lower": {
+            "fraction": "3/32",
+            "decimal": "0.09375"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/16",
+            "decimal": "0.0625"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "7/16",
+            "decimal": "0.4375"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 18,
+      "selector_upper": "0.4109222559876",
+      "box": [
+        {
+          "lower": {
+            "fraction": "1/16",
+            "decimal": "0.0625"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "3/8",
+            "decimal": "0.375"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 17,
+      "selector_upper": "0.574106914873285",
+      "box": [
+        {
+          "lower": {
+            "fraction": "1/16",
+            "decimal": "0.0625"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "3/16",
+            "decimal": "0.1875"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "3/8",
+            "decimal": "0.375"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 14,
+      "selector_upper": "1.94775939064755",
+      "box": [
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 11,
+      "selector_upper": "2.88618205457536",
+      "box": [
+        {
+          "lower": {
+            "fraction": "1/8",
+            "decimal": "0.125"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 9,
+      "selector_upper": "4.24514603238924",
+      "box": [
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "depth": 8,
+      "selector_upper": "5.26461072904329",
+      "box": [
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "1/4",
+            "decimal": "0.25"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        },
+        {
+          "lower": {
+            "fraction": "0/1",
+            "decimal": "0.0"
+          },
+          "upper": {
+            "fraction": "1/2",
+            "decimal": "0.5"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -76,10 +76,13 @@ a convex semidefinite program, leaving only five nonlinear outer variables.  See
 
 The next target is a global bound within this entire three-pair family.  A
 direct stability-margin search found no counterexample in 6,060 outer
-evaluations (5,951 SDP calls), a fixed-dual interval calculation now bounds
-generic outer boxes, and
-the false degree-`3/4` marginal optimum is obstructed through second order.
-These are proof ingredients, not yet a global theorem.  See
+evaluations (5,951 SDP calls), and a fixed-dual interval branch-and-bound now
+certifies individual boxes in the complete five-dimensional outer domain.
+The first run is only a partial cover, not a global certificate.  The false
+degree-`3/4` optimum has also been identified as part of an exact
+six-dimensional marginal sheet: all second-flat directions are tangent to
+that sheet, while the all-orders transverse exclusion remains open.  These
+are proof ingredients, not yet a global theorem.  See
 [`docs/GLOBAL_THREE_PAIR_BOUND.md`](docs/GLOBAL_THREE_PAIR_BOUND.md).
 
 Build the machine-checked algebraic layer with:

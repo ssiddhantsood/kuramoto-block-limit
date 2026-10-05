@@ -32,6 +32,8 @@ jobs:
         run: python scripts/certify_limiting_kkt.py --out /tmp/kkt-certificate.json
       - name: Verify the exact degree-three-quarters marginal obstruction
         run: python scripts/analyze_marginal_family.py
+      - name: Verify the second-order marginal obstruction
+        run: python scripts/analyze_marginal_second_order.py
       - name: Smoke-test torque-eliminated multistart search
         run: >-
           python scripts/search_general_reflection_model.py

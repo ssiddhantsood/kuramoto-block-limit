@@ -74,6 +74,14 @@ For fixed masses and phases, the complete density layer is also formulated as
 a convex semidefinite program, leaving only five nonlinear outer variables.  See
 [`docs/GENERAL_REFLECTION_SEARCH.md`](docs/GENERAL_REFLECTION_SEARCH.md).
 
+The next target is a global bound within this entire three-pair family.  A
+direct stability-margin search found no counterexample in 6,060 outer
+evaluations (5,951 SDP calls), a fixed-dual interval calculation now bounds
+generic outer boxes, and
+the false degree-`3/4` marginal optimum is obstructed through second order.
+These are proof ingredients, not yet a global theorem.  See
+[`docs/GLOBAL_THREE_PAIR_BOUND.md`](docs/GLOBAL_THREE_PAIR_BOUND.md).
+
 Build the machine-checked algebraic layer with:
 
 ```bash
@@ -96,7 +104,7 @@ positive semidefiniteness, and preservation of the rotation-only kernel. See
 - Strict local optimum in the full nine-density three-pair model:
   interval-certified.
 - Sharp upper bound over the general nine-density six-block family:
-  conjectural.
+  conjectural; global certificate machinery is in progress.
 - General graphon extension: scoped; not proved here yet.
 - Lean formalization: the complete uniform clique-blow-up result is checked,
   in addition to the degree, reflection, equitable-lifting, and quotient

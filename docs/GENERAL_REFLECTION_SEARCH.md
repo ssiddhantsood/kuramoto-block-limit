@@ -215,8 +215,11 @@ python scripts/analyze_marginal_family.py
 ```
 
 This obstruction does not rule out a branch whose eigenvalue openings begin
-only at second or higher order.  Numerical probes found none, but that remains
-an open question.
+only at higher order.  A separate exact calculation now shows that the complete
+second spectral variation also vanishes on every potentially stable tangent:
+no one-sided `C^2` branch can open the three modes at linear or quadratic
+order.  Cubic, higher-order, or nonanalytic approaches remain open.  See
+[`GLOBAL_THREE_PAIR_BOUND.md`](GLOBAL_THREE_PAIR_BOUND.md).
 
 ## Limits of the result
 

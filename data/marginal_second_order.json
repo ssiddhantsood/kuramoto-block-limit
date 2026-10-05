@@ -1,0 +1,32 @@
+{
+  "scope": "Exact one-sided C2 jet calculation at the degree-3/4 marginal family; not a punctured-neighborhood exclusion.",
+  "parameter_range": "0 < a < 1/4",
+  "first_order_spectral_sum": "-4*a*d(t_AB)-4*(1/4-a)*d(s_BC)",
+  "critical_tangent_conditions": [
+    "d(t_AB)=d(s_BC)=0",
+    "d(theta_B)=0",
+    "(1/4-a)*d(theta_C)=a*d(theta_A)",
+    "linearized torque equations determine d(v_A), d(v_B), d(v_C)"
+  ],
+  "fixed_kernel_second_variation": "[3*(dA+4*a*dB)^2+32*a^2*d(theta_A)^2]/[4*a*(1-4*a)]",
+  "strong_mode_coupling": "exactly the same expression",
+  "spectral_second_variation": "-4*a*d2(t_AB)-4*(1/4-a)*d2(s_BC) <= 0",
+  "conclusion": "A one-sided C2 stable equilibrium branch cannot open the three weak modes at first or second order. Stability forces every individual linear and quadratic weak opening to vanish.",
+  "limitation": "Cubic, higher-order, Puiseux/nonanalytic, and arbitrary-sequence approaches are not excluded.",
+  "checks": {
+    "weak_even_unit": true,
+    "rotation_unit": true,
+    "strong_even_unit": true,
+    "odd_zero_basis_orthonormal": true,
+    "strong_odd_unit": true,
+    "even_base_rank_one": true,
+    "odd_base_rank_one": true,
+    "first_order_trace_gradient": true,
+    "linearized_torques": true,
+    "compressed_first_derivatives": true,
+    "critical_phase_nullspace": true,
+    "fixed_kernel_quadratic": true,
+    "strong_mode_coupling_cancels_quadratic": true,
+    "moving_rotation_contribution_cancels": true
+  }
+}

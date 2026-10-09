@@ -115,3 +115,11 @@ face to the full nine-density three-pair model.  A general nine-density
 multistart search also recovers this face and finds two lower stable branches,
 and a fixed-mass/phase SDP optimizes all nine densities simultaneously.  None
 of these calculations proves a global upper bound.
+
+On the observed active-degree branch, four of the numerical variables can be
+eliminated algebraically; the resulting optimizer searches only the three
+phase angles. A separate interval check supplies an exact, strictly stable
+point, and a direct random-block theorem transfers any such fixed strict
+block point to sufficiently large simple graphs. See
+[`THREE_PHASE_BRANCH.md`](THREE_PHASE_BRANCH.md). The transfer result is
+asymptotic, not an exact class-constant lift or a global optimizer theorem.

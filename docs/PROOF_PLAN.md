@@ -49,6 +49,13 @@ scale sublinearly. Therefore the strict limiting transverse margin eventually
 dominates the fluctuations. Biregularity preserves the equilibrium equations
 exactly.
 
+This exact-equitable version remains open. A different asymptotic existence
+result is now [proved directly](RANDOM_BLOCK_TRANSFER_THEOREM.md): sample
+independent edges from any fixed strictly stable block point, then correct the
+small finite torque errors by a Newton argument. The corrected finite phases
+need not be constant within classes. This is enough to transfer the degree
+lower bound but does not complete Theorem D as stated.
+
 ## Theorem E — within-topology optimum
 
 Use interval Newton/Krawczyk calculations to enclose the candidate boundary
@@ -62,4 +69,3 @@ point. Then prove either:
 The boundary optimizer is expected to have two additional zero Hessian modes.
 The stable construction must therefore use nearby interior points, not the
 boundary point itself.
-

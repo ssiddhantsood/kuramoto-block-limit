@@ -1,0 +1,177 @@
+{
+  "scope": "Local optimization on the observed two-density, active-degree three-pair branch. Other density faces and singular phase charts are not covered. Numerical SLSQP values are not certificates.",
+  "derivation": "T_C=0 gives k=b/a; T_B=0 gives y affine in h=c/a; T_A=0 gives x affine in h; d_A=d_C gives h. Thus only three signed phases are optimized and mu=d_C=1/2+a.",
+  "nonlinear_variables": 3,
+  "eliminated_variables": [
+    "b/a",
+    "c/a",
+    "x",
+    "y"
+  ],
+  "positive_stability_floors": [
+    1e-05,
+    1e-07,
+    1e-09
+  ],
+  "records": [
+    {
+      "stability_floor": 1e-05,
+      "mu": 0.6912495896280166,
+      "pair_masses": [
+        0.1912495896280167,
+        0.23665282447505748,
+        0.07209758589692586
+      ],
+      "mass_ratios_b_over_a_c_over_a": [
+        1.2374030445521518,
+        0.37698165019416113
+      ],
+      "partial_block_densities_x_y": [
+        0.7872128358762039,
+        0.8673071908193085
+      ],
+      "angles": [
+        -0.7290291945285698,
+        -2.3587839639331447,
+        0.9573770493467948
+      ],
+      "degrees": [
+        0.6912495896280167,
+        0.7112753791726616,
+        0.6912495896280167
+      ],
+      "even_physical_eigenvalues": [
+        9.999999999960682e-06,
+        0.25630452362906614
+      ],
+      "odd_eigenvalues": [
+        1.0000000002192657e-05,
+        0.005230016304463107,
+        0.2874001830852787
+      ],
+      "transverse_values": [
+        0.25800198432841537,
+        0.24025878239918025,
+        0.2762165947818095
+      ],
+      "maximum_torque_error": 5.551115123125783e-17,
+      "active_degree_error": 0.0,
+      "minimum_constraint_slack": -3.931926941154462e-17,
+      "solver": {
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 1,
+        "function_evaluations": 8,
+        "reconstruction_calls": 18,
+        "elapsed_seconds": 0.0062881250014470425
+      },
+      "difference_from_previous_eight_variable_mu": 3.774758283725532e-15
+    },
+    {
+      "stability_floor": 1e-07,
+      "mu": 0.6915506763259806,
+      "pair_masses": [
+        0.19155067632598055,
+        0.23673224776389654,
+        0.07171707591012298
+      ],
+      "mass_ratios_b_over_a_c_over_a": [
+        1.2358726802980642,
+        0.3744026243377758
+      ],
+      "partial_block_densities_x_y": [
+        0.788435982725107,
+        0.868239981626902
+      ],
+      "angles": [
+        -0.72962196352523,
+        -2.3587451679557048,
+        0.9565608570062515
+      ],
+      "degrees": [
+        0.6915506763259806,
+        0.7114935271318059,
+        0.6915506763259804
+      ],
+      "even_physical_eigenvalues": [
+        1.0000000025049931e-07,
+        0.2562926956029026
+      ],
+      "odd_eigenvalues": [
+        9.999999254059231e-08,
+        0.005150133034974042,
+        0.28718252602005756
+      ],
+      "transverse_values": [
+        0.2580026712063216,
+        0.24028008453420413,
+        0.2760300215884377
+      ],
+      "maximum_torque_error": 2.7755575615628914e-17,
+      "active_degree_error": 1.1102230246251565e-16,
+      "minimum_constraint_slack": -7.459407680509825e-15,
+      "solver": {
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 7,
+        "function_evaluations": 34,
+        "reconstruction_calls": 76,
+        "elapsed_seconds": 0.022154916001454694
+      },
+      "difference_from_previous_eight_variable_mu": 5.4511950509095186e-14
+    },
+    {
+      "stability_floor": 1e-09,
+      "mu": 0.69155372975088,
+      "pair_masses": [
+        0.19155372975088003,
+        0.23673305252552237,
+        0.0717132177235976
+      ],
+      "mass_ratios_b_over_a_c_over_a": [
+        1.2358571813422745,
+        0.37437651470875694
+      ],
+      "partial_block_densities_x_y": [
+        0.7884483800992977,
+        0.8682494245563155
+      ],
+      "angles": [
+        -0.7296279572941283,
+        -2.358744776535841,
+        0.9565525783613051
+      ],
+      "degrees": [
+        0.69155372975088,
+        0.7114957384024598,
+        0.69155372975088
+      ],
+      "even_physical_eigenvalues": [
+        1.0000008404279618e-09,
+        0.2562925746785045
+      ],
+      "odd_eigenvalues": [
+        9.999991041204238e-10,
+        0.0051493271474246085,
+        0.2871803148121276
+      ],
+      "transverse_values": [
+        0.25800267489997664,
+        0.24028030319306637,
+        0.27602813122598535
+      ],
+      "maximum_torque_error": 7.28583859910259e-17,
+      "active_degree_error": 0.0,
+      "minimum_constraint_slack": -8.958795762549317e-16,
+      "solver": {
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 12,
+        "function_evaluations": 100,
+        "reconstruction_calls": 212,
+        "elapsed_seconds": 0.04748333400129923
+      },
+      "difference_from_previous_eight_variable_mu": 1.0103029524088925e-14
+    }
+  ]
+}

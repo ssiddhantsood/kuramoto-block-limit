@@ -23,6 +23,14 @@ The first exact results are in
 equilibrium lifting, the symmetric quotient formula, and a rigorous transverse
 comparison criterion.
 
+A separate [random-block transfer theorem](docs/RANDOM_BLOCK_TRANSFER_THEOREM.md)
+now proves that **every fixed, strictly stable finite-step block equilibrium**
+in the stated sense produces stable nonsynchronous equilibria on sufficiently
+large simple unweighted graphs, with normalized minimum degree approaching the
+block value. This is a direct asymptotic argument, not an exact equitable lift
+and not a claim that the published graphon persistence theorem applies
+verbatim to discontinuous step graphons.
+
 [`docs/CLIQUE_BLOWUP_THEOREM.md`](docs/CLIQUE_BLOWUP_THEOREM.md) proves an
 additional unconditional result: every clique blow-up of a strictly stable
 finite witness remains strictly stable. Applied to the `N=80,002` witness, it
@@ -64,6 +72,17 @@ It reproduces the observed connectivity sequence while separately constraining
 the physical even, odd, and transverse stability sectors. See
 [`docs/REDUCED_OPTIMIZATION.md`](docs/REDUCED_OPTIMIZATION.md).
 
+On the observed active-degree branch, the three torque equations and the
+degree tie eliminate both mass ratios and both partial densities. The local
+search then uses **only three phase angles**. An exact phase-defined strict
+block point is interval-checked with minimum-degree ratio at least
+`0.691553760567123749076110`; the transfer theorem turns it into an
+asymptotic finite-simple-graph existence result. The derivation, verifier,
+reproduction commands, and limitations are in
+[`docs/THREE_PHASE_BRANCH.md`](docs/THREE_PHASE_BRANCH.md). An independent
+[Arb-ball audit](data/three_phase_arb_certificate.json) checks the same strict
+point through a separate arithmetic backend.
+
 The density pattern is now also tested rather than assumed.  The general
 nine-density search recovers the same two-interior-density face, finds two
 lower stable branches, and exposes an exact degree-`3/4` marginal family with a
@@ -84,6 +103,10 @@ six-dimensional marginal sheet: all second-flat directions are tangent to
 that sheet, while the all-orders transverse exclusion remains open.  These
 are proof ingredients, not yet a global theorem.  See
 [`docs/GLOBAL_THREE_PAIR_BOUND.md`](docs/GLOBAL_THREE_PAIR_BOUND.md).
+The exact phase triple `(-pi/4,-3pi/4,pi/4)` is also completely classified:
+all weakly stable points on that slice have degree at most `3/4` and extra
+zero modes. This useful exclusion is only a fixed-angle result; see
+[`docs/FIXED_ANGLE_SLICE.md`](docs/FIXED_ANGLE_SLICE.md).
 
 Build the machine-checked algebraic layer with:
 
@@ -103,7 +126,9 @@ positive semidefiniteness, and preservation of the rotation-only kernel. See
 - Exact finite-dimensional formulas: derived and numerically checked.
 - Exact equilibrium lifting to equitable blow-ups: proved.
 - Quotient reduction and a checkable finite transverse criterion: proved.
-- Arbitrarily-large realization theorem: proof plan drafted; not proved yet.
+- Arbitrarily-large **random-block** realization for each fixed strict step
+  equilibrium: proved, with phase corrections after sampling. The stronger
+  exact equitable partial-biregular realization target remains open.
 - Strict local optimum in the full nine-density three-pair model:
   interval-certified.
 - Sharp upper bound over the general nine-density six-block family:

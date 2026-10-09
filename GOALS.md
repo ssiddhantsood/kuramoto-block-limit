@@ -19,7 +19,9 @@ fractional block densities, and three phase angles. Derive:
 matrix and reproduce every relevant number from a packaged finite witness.
 
 **Status:** complete at the algebraic/numerical level; interval reproduction is
-part of A2.
+part of A2. On the observed two-density, active-degree face, the torques and
+degree tie also eliminate four parameters exactly, leaving a three-phase
+local search; see [`docs/THREE_PHASE_BRANCH.md`](docs/THREE_PHASE_BRANCH.md).
 
 ### A2. Candidate boundary point
 
@@ -55,6 +57,16 @@ are checkable, and a verifier constructs/checks finite instances.
 comparison criterion are proved. Existence of arbitrarily large block
 realizations satisfying the spectral bounds remains open.
 
+There is now a distinct, less rigid positive result:
+[`docs/RANDOM_BLOCK_TRANSFER_THEOREM.md`](docs/RANDOM_BLOCK_TRANSFER_THEOREM.md)
+proves that independent edge sampling around **any fixed strict step
+equilibrium** gives, with high probability for large `n`, a nearby *exact*
+stable equilibrium after a small phase correction. Its normalized minimum
+degree tends to the block value. A [strict six-block point](data/three_phase_interior_near_boundary.json)
+with minimum block degree at least `0.691553760567123749076110` supplies the
+hypotheses. This does **not** meet A3's exact class-constant/equitable lifting
+criterion or give a useful explicit `n`.
+
 The exact equilibrium-lifting lemma is also machine-checked in Lean.
 
 The uniform clique-blow-up special case is now completely machine-checked:
@@ -89,6 +101,9 @@ now known to lie on a six-dimensional marginal sheet; every second-flat
 critical direction is tangent to that sheet.  The global upper bound remains
 open because the outer domain and all-orders approaches transverse to the
 marginal sheet have not been exhaustively excluded.
+An [exact classification of one fixed-angle slice](docs/FIXED_ANGLE_SLICE.md)
+shows its weakly stable degree is at most `3/4` and every point has extra
+zero modes; it is an exclusion tool, not a global bound.
 
 ## Track B — finite-step graphon persistence
 
@@ -96,7 +111,8 @@ marginal sheet have not been exhaustively excluded.
 
 Document exactly why the published theorem does not apply verbatim: a finite
 step graphon and its class-constant equilibrium have jump discontinuities, and
-the limiting optimizer also loses invertibility at its stability boundary.
+Kuramoto rotation creates a zero mode that must be quotiented out. The
+limiting optimizer has two additional zero modes at its stability boundary.
 
 ### B2. Partition-adapted persistence theorem
 

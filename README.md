@@ -108,6 +108,15 @@ all weakly stable points on that slice have degree at most `3/4` and extra
 zero modes. This useful exclusion is only a fixed-angle result; see
 [`docs/FIXED_ANGLE_SLICE.md`](docs/FIXED_ANGLE_SLICE.md).
 
+A distinct [fourth-pair invasion test](docs/PAIR_INSERTION_FIRST_ORDER.md)
+now gives a replayable interval exclusion of **positive first-order degree
+gain** when one reflected pair of vanishing mass is added to the marginal
+six-class endpoint. It covers every new phase outside three explicit
+`+/-0.05`-radian windows around the existing pair phases, with unrestricted
+old parameter derivatives. The
+near-duplicate phase neighborhoods, higher-order insertions, and global
+optimality remain open.
+
 Build the machine-checked algebraic layer with:
 
 ```bash

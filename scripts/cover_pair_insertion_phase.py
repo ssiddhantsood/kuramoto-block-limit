@@ -40,6 +40,16 @@ def select_dual(lo, hi, cap):
 
 
 def verify_report(report):
+    if report.get("unbounded_derivatives") is not True:
+        raise RuntimeError("report is not an unrestricted-derivative certificate")
+    expected_intervals, expected_phases = initial_intervals(
+        Decimal(report["excluded_support_radius_radians"])
+    )
+    expected_json = [[format_decimal(lo), format_decimal(hi)] for lo, hi in expected_intervals]
+    if report["initial_intervals"] != expected_json:
+        raise RuntimeError("initial intervals do not match the certified endpoint phases")
+    if report["support_phase_centers"] != [format_decimal(x) for x in expected_phases]:
+        raise RuntimeError("support phase centers do not match the KKT certificate")
     leaves = [tuple(map(Decimal, leaf["box"])) for leaf in report["certified_leaves"]]
     leaves += [tuple(map(Decimal, box)) for box in report["unresolved_leaves"]]
     leaves.sort()
